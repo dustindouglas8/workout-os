@@ -1,0 +1,7 @@
+# Python
+__pycache__/
+*.pyc
+.DS_Store
+
+# Old build output (renamed to docs/ for GitHub Pages)
+dist/
