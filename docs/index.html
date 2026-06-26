@@ -493,7 +493,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Training OS">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
-  <!-- Built: 2026-06-25 01:40 UTC -->
+  <!-- Built: 2026-06-26 16:39 UTC -->
 </head>
 <body>
 
@@ -2547,19 +2547,25 @@ function importData() {
 // ── SETTINGS ──────────────────────────────────────────────────────────────────
 function openSettings() {
   syncSettingsOpts();
-  document.getElementById('settingsOverlay').style.display = 'flex';
+  document.getElementById('settings-modal').style.display = 'flex';
 }
 
 function closeSettings() {
-  document.getElementById('settingsOverlay').style.display = 'none';
+  document.getElementById('settings-modal').style.display = 'none';
 }
 
 function syncSettingsOpts() {
-  document.getElementById('settPhase').value = CFG.phase;
-  document.getElementById('settWeek').value = CFG.week;
-  document.getElementById('settWeekInPhase').value = CFG.weekInPhase;
-  const toggleBtns = document.querySelectorAll('.sett-toggle-btn');
-  toggleBtns.forEach(b => b.classList.toggle('active', b.dataset.val === CFG.weekToggle));
+  // Sync static button groups to current CFG
+  document.querySelectorAll('#settings-toggle-opts .settings-opt').forEach(b => {
+    const val = b.textContent.trim() === 'Lower Heavy' ? 'lower' : 'upper';
+    b.classList.toggle('active', val === CFG.weekToggle);
+  });
+  document.querySelectorAll('#settings-phase-opts .settings-opt').forEach((b, i) => {
+    b.classList.toggle('active', (i + 1) === Number(CFG.phase));
+  });
+  document.querySelectorAll('#settings-week-opts .settings-opt').forEach((b, i) => {
+    b.classList.toggle('active', (i + 1) === Number(CFG.weekInPhase));
+  });
 }
 
 function settingsSet(field, val) {
@@ -2717,8 +2723,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Dismiss overlays on backdrop click
-  document.getElementById('settingsOverlay')?.addEventListener('click', e => {
-    if (e.target.id === 'settingsOverlay') closeSettings();
+  document.getElementById('settings-modal')?.addEventListener('click', e => {
+    if (e.target.id === 'settings-modal') closeSettings();
   });
   document.getElementById('setLogOverlay')?.addEventListener('click', e => {
     if (e.target.id === 'setLogOverlay') cancelSetLog();
