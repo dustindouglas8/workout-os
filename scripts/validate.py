@@ -136,6 +136,35 @@ def check_pwa_hooks(html: str):
             warn(f"PWA: {label} missing — run build.py to inject")
 
 
+def check_stale_runtime_ids(html: str):
+    """Catch old JS container IDs that do not exist in the current markup."""
+    stale_ids = [
+        "settingsOverlay",
+        "restDock",
+        "restBar",
+        "restLabel",
+        "exDrawer",
+        "drawerContent",
+        "guidedOverlay",
+        "guidedMoveName",
+        "guidedMoveRx",
+        "guidedCue",
+        "guidedCount",
+        "guidedTimer",
+        "exercisesContent",
+        "sessionHistoryList",
+        "weeklyCheckinList",
+        "benchmarksList",
+        "roadmapContent",
+    ]
+    found = [s for s in stale_ids if f"getElementById('{s}')" in html or f'getElementById("{s}")' in html]
+    if found:
+        for stale_id in found:
+            err(f"Stale runtime DOM id reference: '{stale_id}'")
+    else:
+        ok("Runtime DOM ids: no stale container references")
+
+
 def check_exlib_cue_completeness(exercises: list[dict]):
     """Every EX_LIB entry should have setup, exec, and breath fields."""
     incomplete = []
@@ -176,6 +205,7 @@ def validate(path: Path):
     check_exlib_cue_completeness(exercises)
     check_safety_sensitive(exercises)
     check_timed_exercises_have_duration(html)
+    check_stale_runtime_ids(html)
     check_pwa_hooks(html)
 
     print()

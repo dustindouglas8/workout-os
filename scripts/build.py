@@ -200,7 +200,7 @@ def build():
             shutil.rmtree(icons_dst)
         shutil.copytree(icons_src, icons_dst)
         count = len(list(icons_dst.iterdir()))
-        print(f"  Icons:     dist/icons/  ({count} files)")
+        print(f"  Icons:     docs/icons/  ({count} files)")
     else:
         print(f"  Icons:     none (add PNG icons to src/icons/ for full PWA install)")
 

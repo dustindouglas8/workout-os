@@ -493,7 +493,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Training OS">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
-  <!-- Built: 2026-06-26 16:39 UTC -->
+  <!-- Built: 2026-06-26 18:58 UTC -->
 </head>
 <body>
 
@@ -2034,7 +2034,7 @@ function startRest(sec) {
   if (_restInt) clearInterval(_restInt);
   _restTotal = sec;
   _restEnd = Date.now() + sec * 1000;
-  const dock = document.getElementById('restDock');
+  const dock = document.getElementById('rest-dock');
   dock.style.display = 'flex';
   dock.classList.add('visible');
   updateRestDock();
@@ -2043,8 +2043,8 @@ function startRest(sec) {
 
 function updateRestDock() {
   const left = Math.max(0, Math.ceil((_restEnd - Date.now()) / 1000));
-  const bar = document.getElementById('restBar');
-  const lbl = document.getElementById('restLabel');
+  const bar = document.getElementById('rest-bar-fill');
+  const lbl = document.getElementById('rest-dock-time');
   if (lbl) lbl.textContent = fmtTime(left);
   if (bar) bar.style.width = (_restTotal > 0 ? (left / _restTotal) * 100 : 0) + '%';
   if (left <= 0) stopRest(true);
@@ -2052,7 +2052,7 @@ function updateRestDock() {
 
 function stopRest(auto) {
   if (_restInt) { clearInterval(_restInt); _restInt = null; }
-  const dock = document.getElementById('restDock');
+  const dock = document.getElementById('rest-dock');
   if (dock) { dock.classList.remove('visible'); setTimeout(() => dock.style.display = 'none', 300); }
   if (auto) showSimpleToast('Rest done — go!');
 }
@@ -2068,8 +2068,8 @@ function addRest(sec) {
 // ── EXERCISE DRAWER ───────────────────────────────────────────────────────────
 function openDrawer(name) {
   const ex = EX_LIB.find(e => e.n === name);
-  const drawer = document.getElementById('exDrawer');
-  const content = document.getElementById('drawerContent');
+  const drawer = document.getElementById('ex-drawer');
+  const content = document.getElementById('drawer-body');
   if (!ex) { content.innerHTML = `<div style="padding:20px;color:var(--text3);">No info for "${name}"</div>`; }
   else {
     const cueList = [ex.cue, ex.setup, ex.exec, ex.breath].filter(Boolean);
@@ -2088,7 +2088,7 @@ function openDrawer(name) {
 }
 
 function closeDrawer() {
-  document.getElementById('exDrawer').classList.remove('open');
+  document.getElementById('ex-drawer').classList.remove('open');
 }
 
 // ── SESSION LOG (SECTION 5) ───────────────────────────────────────────────────
@@ -2184,16 +2184,16 @@ function toggleNightMove(idx) {
 function startGuided() {
   _guidedIdx = 0;
   showGuidedMove();
-  document.getElementById('guidedOverlay').style.display = 'flex';
+  document.getElementById('guided-overlay').style.display = 'flex';
 }
 
 function showGuidedMove() {
   const move = NIGHT_MOVES[_guidedIdx];
   if (!move) { endGuided(); return; }
-  document.getElementById('guidedMoveName').textContent = move.n;
-  document.getElementById('guidedMoveRx').textContent = move.rx;
-  document.getElementById('guidedCue').textContent = move.cue || '';
-  document.getElementById('guidedCount').textContent = `${_guidedIdx + 1} / ${NIGHT_MOVES.length}`;
+  document.getElementById('guided-move-name').textContent = move.n;
+  document.getElementById('guided-move-reps').textContent = move.rx;
+  document.getElementById('guided-move-cue').textContent = move.cue || '';
+  document.getElementById('guided-step-label').textContent = `Movement ${_guidedIdx + 1} of ${NIGHT_MOVES.length}`;
   _guidedSec = move.dur || 30;
   updateGuidedTimer();
   if (_guidedInt) clearInterval(_guidedInt);
@@ -2205,7 +2205,7 @@ function showGuidedMove() {
 }
 
 function updateGuidedTimer() {
-  const el = document.getElementById('guidedTimer');
+  const el = document.getElementById('guided-timer');
   if (el) el.textContent = fmtTime(_guidedSec);
 }
 
@@ -2220,7 +2220,7 @@ function guidedNext() {
 }
 
 function endGuided() {
-  document.getElementById('guidedOverlay').style.display = 'none';
+  document.getElementById('guided-overlay').style.display = 'none';
   if (_guidedInt) clearInterval(_guidedInt);
   renderNightChecks();
 }
@@ -2230,9 +2230,9 @@ function endGuided() {
 let _exFilter = 'all';
 
 function renderExercises() {
-  const el = document.getElementById('exercisesContent');
+  const el = document.getElementById('ex-lib-list');
   if (!el) return;
-  const q = (document.getElementById('exSearch') || {}).value || '';
+  const q = (document.getElementById('ex-search') || {}).value || '';
   const cats = [...new Set(EX_LIB.map(e => e.pat).filter(Boolean))].sort();
   const filterHtml = `<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;">
     <button class="pill${_exFilter==='all'?' pp':''}" onclick="setFilter('all')">All</button>
@@ -2251,7 +2251,11 @@ function renderExercises() {
       </div>
       <span style="color:var(--text3);">›</span>
     </div>`).join('');
-  el.innerHTML = filterHtml + `<div>${listHtml || '<div style="padding:20px;color:var(--text3);text-align:center;">No exercises found</div>'}</div>`;
+  const filters = document.getElementById('filter-chips');
+  if (filters) filters.innerHTML = filterHtml;
+  const count = document.getElementById('ex-lib-count');
+  if (count) count.textContent = `${entries.length} / ${EX_LIB.length} exercises`;
+  el.innerHTML = `<div>${listHtml || '<div style="padding:20px;color:var(--text3);text-align:center;">No exercises found</div>'}</div>`;
 }
 
 function filterExercises() { renderExercises(); }
@@ -2269,7 +2273,7 @@ function renderLogPage() {
 }
 
 function renderSessionHistory() {
-  const el = document.getElementById('sessionHistoryList');
+  const el = document.getElementById('session-history-list');
   if (!el) return;
   const keys = Object.keys(localStorage)
     .filter(k => k.startsWith(NS + 'sets:'))
@@ -2295,7 +2299,7 @@ function renderSessionHistory() {
 }
 
 function renderWeeklyHistory() {
-  const el = document.getElementById('weeklyCheckinList');
+  const el = document.getElementById('weekly-history');
   if (!el) return;
   const keys = Object.keys(localStorage)
     .filter(k => k.startsWith(NS + 'weekly:'))
@@ -2312,7 +2316,7 @@ function renderWeeklyHistory() {
 }
 
 function renderBenchHistory() {
-  const el = document.getElementById('benchmarksList');
+  const el = document.getElementById('bench-history');
   if (!el) return;
   const bench = ls('benchmarks', {});
   if (!Object.keys(bench).length) { el.innerHTML = '<div style="padding:16px;color:var(--text3);text-align:center;">No benchmarks saved yet</div>'; return; }
@@ -2320,7 +2324,7 @@ function renderBenchHistory() {
     const last = arr[arr.length-1];
     return `<div style="border-bottom:1px solid var(--border);padding:10px 14px;font-size:12px;">
       <div style="font-weight:600;">${ex}</div>
-      <div style="color:var(--text3);">Best: ${last.weight?last.weight+'lb × ':''}${last.reps} reps — ${last.date}</div>
+      <div style="color:var(--text3);">Latest: ${last.value ?? last.reps ?? '—'} ${last.unit || ''}${last.weight ? ' · '+last.weight+'lb' : ''} — ${last.date}</div>
     </div>`;
   }).join('');
 }
@@ -2331,24 +2335,32 @@ function toggleLogSets(dateKey) {
 }
 
 function saveWeeklyCheckin() {
-  const bw = (document.getElementById('wBw') || {}).value;
-  const sleep = (document.getElementById('wSleep') || {}).value;
-  const rec = (document.getElementById('wRecovery') || {}).value;
-  const notes = (document.getElementById('wNotes') || {}).value;
+  const bw = (document.getElementById('wc-bw') || {}).value;
+  const sleep = (document.getElementById('wc-sleep') || {}).value;
+  const rec = (document.getElementById('wc-energy') || {}).value;
+  const rhr = (document.getElementById('wc-rhr') || {}).value;
+  const notes = (document.getElementById('wc-note') || {}).value;
   const key = 'weekly:' + todayKey();
-  save(key, { bw, sleep, recovery: rec, notes, date: todayKey() });
+  save(key, { bw, sleep, rhr, recovery: rec, notes, date: todayKey() });
   showSimpleToast('Weekly check-in saved');
   renderWeeklyHistory();
 }
 
 function saveBenchmarks() {
-  const ex = (document.getElementById('benchEx') || {}).value;
-  const weight = parseFloat((document.getElementById('benchWeight') || {}).value) || 0;
-  const reps = parseInt((document.getElementById('benchReps') || {}).value) || 0;
-  if (!ex || !reps) { showSimpleToast('Fill exercise and reps'); return; }
   const bench = ls('benchmarks', {});
-  if (!bench[ex]) bench[ex] = [];
-  bench[ex].push({ weight, reps, date: todayKey() });
+  [
+    ['Max strict pull-ups', 'b-pullup', 'reps'],
+    ['Ring push-up max', 'b-pushup', 'reps'],
+    ['Zone 2 HR avg', 'b-zone2hr', 'bpm'],
+    ['Zone 2 pace', 'b-zone2', 'mph'],
+    ['KB carry duration', 'b-carry', 'sec'],
+    ['Resting HR 7-day avg', 'b-rhr', 'bpm'],
+  ].forEach(([label, id, unit]) => {
+    const value = parseFloat((document.getElementById(id) || {}).value);
+    if (!Number.isFinite(value)) return;
+    if (!bench[label]) bench[label] = [];
+    bench[label].push({ value, unit, date: todayKey() });
+  });
   save('benchmarks', bench);
   showSimpleToast('Benchmark saved');
   renderBenchHistory();
@@ -2356,14 +2368,18 @@ function saveBenchmarks() {
 
 // ── ROADMAP PAGE ──────────────────────────────────────────────────────────────
 function renderRoadmap() {
-  const el = document.getElementById('roadmapContent');
-  if (!el) return;
+  const blockMap = document.getElementById('block-map');
+  const chart = document.getElementById('intensity-chart');
+  const gate = document.getElementById('phase-gate-section');
+  const weekGrid = document.getElementById('week-grid');
+  const weekSplit = document.getElementById('week-split-display');
   const phases = [
     { num: 1, name: 'Foundation', weeks: '1–4', desc: '2 sets · 3 RIR week 1, 2 RIR after', detail: 'Establish movement quality, joint tolerance, and consistent habit before adding load.' },
     { num: 2, name: 'Volume Build', weeks: '5–8', desc: '3 sets · 2 RIR', detail: 'Add the third set. Load continues to progress. Volume doubles from Phase 1.' },
     { num: 3, name: 'Intensification', weeks: '9–12', desc: '3 sets + myo-reps · 2 RIR', detail: 'Push effective rep density on accessories. Hold load constant on compounds.' },
   ];
-  el.innerHTML = phases.map(p => renderPhaseGate(p)).join('') +
+  if (blockMap) {
+    blockMap.innerHTML = phases.map(p => renderPhaseGate(p)).join('') +
     `<div style="margin-top:16px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:14px;">
       <div style="font-size:12px;font-weight:700;margin-bottom:8px;color:var(--text3);">CURRENT POSITION</div>
       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
@@ -2372,6 +2388,20 @@ function renderRoadmap() {
         <div style="text-align:center;"><div style="font-size:22px;font-weight:800;color:var(--amber);">${CFG.weekInPhase}</div><div style="font-size:10px;color:var(--text3);">Week in Phase</div></div>
       </div>
     </div>`;
+  }
+  if (chart) {
+    const heights = [35,45,55,25,50,62,72,32,68,78,88,38];
+    chart.innerHTML = heights.map((h, i) => `<div title="Week ${i+1}" style="flex:1;height:${h}%;background:${i+1===CFG.week?'var(--acc)':(i+1)%4===0?'var(--amber)':'var(--teal)'};border-radius:3px 3px 0 0;opacity:${i+1===CFG.week?'1':'.75'};"></div>`).join('');
+  }
+  if (gate) {
+    gate.innerHTML = `<div class="card" style="padding:12px;margin-top:12px;"><div style="font-size:12px;font-weight:700;color:var(--text3);margin-bottom:6px;">PHASE GATE</div><div style="font-size:12px;color:var(--text2);">${getPhaseWhy()}</div></div>`;
+  }
+  if (weekGrid) {
+    weekGrid.innerHTML = Array.from({length:12}, (_, i) => `<div class="pill${i+1===CFG.week?' pp':''}" style="text-align:center;padding:7px 0;">${i+1}</div>`).join('');
+  }
+  if (weekSplit) {
+    weekSplit.innerHTML = `<div class="card" style="padding:12px;margin-top:8px;font-size:12px;color:var(--text2);">${SCHEDULE[CFG.weekToggle].map((s,i)=>`<div style="display:flex;justify-content:space-between;gap:12px;padding:4px 0;border-bottom:1px solid var(--border);"><span>${DAY_NAMES[i]}</span><strong style="text-align:right;">${s}</strong></div>`).join('')}</div>`;
+  }
 }
 
 function renderPhaseGate(p) {
@@ -2729,8 +2759,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('setLogOverlay')?.addEventListener('click', e => {
     if (e.target.id === 'setLogOverlay') cancelSetLog();
   });
-  document.getElementById('exDrawer')?.addEventListener('click', e => {
-    if (e.target.id === 'exDrawer') closeDrawer();
+  document.getElementById('ex-drawer')?.addEventListener('click', e => {
+    if (e.target.id === 'ex-drawer') closeDrawer();
   });
 
   // Initialize app
@@ -2762,7 +2792,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Exercises search
-  const exSearch = document.getElementById('exSearch');
+  const exSearch = document.getElementById('ex-search');
   if (exSearch) exSearch.addEventListener('input', filterExercises);
 
   // Session stopwatch auto-start
