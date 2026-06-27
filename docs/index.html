@@ -493,7 +493,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Training OS">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
-  <!-- Built: 2026-06-26 18:58 UTC -->
+  <!-- Built: 2026-06-27 05:14 UTC -->
 </head>
 <body>
 
@@ -2165,7 +2165,7 @@ function renderNightChecks() {
           <div class="check-circle">${done[i] ? '✓' : ''}</div>
           <div style="flex:1;">
             <div class="check-name">${m.n}</div>
-            <div class="check-meta">${m.rx}</div>
+            <div class="check-meta">${m.r}</div>
           </div>
         </div>`).join('')}
       <button onclick="startGuided()" style="width:100%;margin-top:10px;padding:10px;background:var(--acc);border:none;border-radius:var(--r2);color:#fff;font-weight:700;font-size:14px;cursor:pointer;">Guided Mode</button>
@@ -2191,8 +2191,8 @@ function showGuidedMove() {
   const move = NIGHT_MOVES[_guidedIdx];
   if (!move) { endGuided(); return; }
   document.getElementById('guided-move-name').textContent = move.n;
-  document.getElementById('guided-move-reps').textContent = move.rx;
-  document.getElementById('guided-move-cue').textContent = move.cue || '';
+  document.getElementById('guided-move-reps').textContent = move.r;
+  document.getElementById('guided-move-cue').textContent = move.note || '';
   document.getElementById('guided-step-label').textContent = `Movement ${_guidedIdx + 1} of ${NIGHT_MOVES.length}`;
   _guidedSec = move.dur || 30;
   updateGuidedTimer();
