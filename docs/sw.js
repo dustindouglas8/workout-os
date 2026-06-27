@@ -1,6 +1,6 @@
 // Training OS — Service Worker
 // Cache version bumps on every build to force refresh after deploy
-const CACHE = 'training-os-d05fbfd6';
+const CACHE = 'training-os-2e8b1696';
 const ASSETS = [
   './',
   './index.html',

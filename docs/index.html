@@ -493,7 +493,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Training OS">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
-  <!-- Built: 2026-06-27 15:34 UTC -->
+  <!-- Built: 2026-06-27 16:50 UTC -->
 </head>
 <body>
 
@@ -880,7 +880,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 <div class="page" id="page-roadmap">
   <div class="page-header">
     <div class="page-header-title">Roadmap</div>
-    <div class="page-header-meta">12-month plan · 3 blocks · 3 phases each</div>
+    <div class="page-header-meta">12-month plan · 4 blocks · 12 weeks each</div>
   </div>
   <div class="sl">Annual Block Map</div>
   <div id="block-map"></div>
@@ -1035,6 +1035,67 @@ const NIGHT_MOVES = [
   { n:'Supine twist', r:'30s each side', note:'Eyes closed. Slow breath. Let gravity rotate you. Thoracic decompression.', dur:60 },
   { n:'Crocodile breathing', r:'2 min', note:'Face down, breathe into belly — feel it push into floor. Resets ANS.', dur:120 },
   { n:'4-7-8 breath', r:'4–5 cycles', note:'Inhale 4s, hold 7s, exhale 8s. Lights dimmed. End every night here.', dur:120 },
+];
+
+// ═══════════════════════════════════════════════════════════════
+// ANNUAL BLOCK PLAN
+// ═══════════════════════════════════════════════════════════════
+
+const BLOCKS = [
+  {
+    num: 1,
+    name: 'Recomp + Foundation',
+    status: 'active',
+    approxMonths: 'Months 1–3',
+    goal: 'Body recomposition, connective tissue tolerance, movement quality, and consistent habit before adding load.',
+    phases: [
+      { name: 'Phase 1', weeks: 'Wks 1–3', focus: 'Technique, 2 sets, baseline volume' },
+      { name: 'Deload', weeks: 'Wk 4',    focus: 'Benchmark: pull-ups, Zone 2, RHR' },
+      { name: 'Phase 2', weeks: 'Wks 5–7', focus: '3 sets, load progression begins' },
+      { name: 'Deload', weeks: 'Wk 8',    focus: 'Benchmark repeat · advance/repeat/pivot decision' },
+      { name: 'Phase 3', weeks: 'Wks 9–11', focus: 'Myo-reps on accessories, intensification' },
+      { name: 'Review',  weeks: 'Wk 12',  focus: 'Finalize Block 2, full benchmark set' },
+    ],
+    keyMoves: ['Pull-Up', 'Ring Push-Up', 'KB Goblet Squat', 'KB Romanian Deadlift', 'KB Single-Arm Row', 'Dead Bug'],
+    gate: 'Pull-up max · Zone 2 HR avg · RHR 7-day avg',
+  },
+  {
+    num: 2,
+    name: 'Back & Posture',
+    status: 'draft',
+    approxMonths: 'Months 4–6',
+    goal: 'Lat width, mid-back thickness, rear delt development, scapular control. Push:pull shifts to 1:2. DBs unlock heavier row progressions.',
+    phases: [
+      { name: 'Phase 1', weeks: 'Wks 1–3', focus: 'DB rows + face pulls, 3 sets, mind-muscle connection' },
+      { name: 'Deload', weeks: 'Wk 4',    focus: 'Pull-up max, posture assessment' },
+      { name: 'Phase 2', weeks: 'Wks 5–7', focus: '4 sets, DB pullovers added, mandatory load progression' },
+      { name: 'Deload', weeks: 'Wk 8',    focus: 'Weighted pull-up test' },
+      { name: 'Phase 3', weeks: 'Wks 9–11', focus: 'Myo-reps on DB rows, weighted pull-ups weekly' },
+      { name: 'Review',  weeks: 'Wk 12',  focus: 'Compare benchmarks, posture photos, finalize Block 3' },
+    ],
+    keyMoves: ['DB Single-Arm Row', 'DB Chest-Supported Row', 'DB Pullover', 'Band Face Pull', 'Weighted Pull-Up', 'Y-T-W Prone', 'Band Pull-Apart'],
+    gate: 'Weighted pull-up max · DB row load · posture photo comparison',
+  },
+  {
+    num: 3,
+    name: 'TBD at Block 2 Review',
+    status: 'planned',
+    approxMonths: 'Months 7–9',
+    goal: 'To be finalized at end of Block 2. Likely: lower body strength, hypertrophy emphasis, or conditioning depending on Chicago winter context and Block 2 results.',
+    phases: [],
+    keyMoves: [],
+    gate: 'Defined at Block 2 review',
+  },
+  {
+    num: 4,
+    name: 'TBD at Block 3 Review',
+    status: 'planned',
+    approxMonths: 'Months 10–12',
+    goal: 'To be finalized at end of Block 3. Consolidation, second specialization, or repeat recomp depending on outcomes.',
+    phases: [],
+    keyMoves: [],
+    gate: 'Defined at Block 3 review',
+  },
 ];
 
 // ═══════════════════════════════════════════════════════════════
@@ -2400,41 +2461,115 @@ function saveBenchmarks() {
 }
 
 // ── ROADMAP PAGE ──────────────────────────────────────────────────────────────
+let _expandedBlock = 1;
+
 function renderRoadmap() {
+  const DAY_NAMES = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   const blockMap = document.getElementById('block-map');
   const chart = document.getElementById('intensity-chart');
   const gate = document.getElementById('phase-gate-section');
   const weekGrid = document.getElementById('week-grid');
   const weekSplit = document.getElementById('week-split-display');
-  const phases = [
-    { num: 1, name: 'Foundation', weeks: '1–4', desc: '2 sets · 3 RIR week 1, 2 RIR after', detail: 'Establish movement quality, joint tolerance, and consistent habit before adding load.' },
-    { num: 2, name: 'Volume Build', weeks: '5–8', desc: '3 sets · 2 RIR', detail: 'Add the third set. Load continues to progress. Volume doubles from Phase 1.' },
-    { num: 3, name: 'Intensification', weeks: '9–12', desc: '3 sets + myo-reps · 2 RIR', detail: 'Push effective rep density on accessories. Hold load constant on compounds.' },
-  ];
+
+  // ── Annual Strip ──────────────────────────────────────────────
   if (blockMap) {
-    blockMap.innerHTML = phases.map(p => renderPhaseGate(p)).join('') +
-    `<div style="margin-top:16px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:14px;">
-      <div style="font-size:12px;font-weight:700;margin-bottom:8px;color:var(--text3);">CURRENT POSITION</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
-        <div style="text-align:center;"><div style="font-size:22px;font-weight:800;color:var(--teal);">${CFG.phase}</div><div style="font-size:10px;color:var(--text3);">Phase</div></div>
-        <div style="text-align:center;"><div style="font-size:22px;font-weight:800;color:var(--acc);">${CFG.week}</div><div style="font-size:10px;color:var(--text3);">Total Week</div></div>
-        <div style="text-align:center;"><div style="font-size:22px;font-weight:800;color:var(--amber);">${CFG.weekInPhase}</div><div style="font-size:10px;color:var(--text3);">Week in Phase</div></div>
-      </div>
-    </div>`;
+    const statusColor = { active:'var(--teal)', draft:'var(--acc)', planned:'var(--border)' };
+    const statusLabel = { active:'Active', draft:'Draft', planned:'Planned' };
+    blockMap.innerHTML = BLOCKS.map(b => {
+      const isExpanded = _expandedBlock === b.num;
+      const borderColor = b.status === 'active' ? 'var(--teal)' : b.status === 'draft' ? 'var(--acc2)' : 'var(--border)';
+      const phasesHtml = b.phases.length ? `
+        <div style="margin:10px 0 6px;">
+          ${b.phases.map(p => `
+            <div style="display:flex;gap:10px;padding:5px 0;border-bottom:1px solid var(--border);font-size:11px;">
+              <span style="color:var(--text3);min-width:70px;">${p.weeks}</span>
+              <span style="font-weight:600;min-width:64px;">${p.name}</span>
+              <span style="color:var(--text2);">${p.focus}</span>
+            </div>`).join('')}
+        </div>` : '';
+      const movesHtml = b.keyMoves.length ? `
+        <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:4px;">
+          ${b.keyMoves.map(m => `<span style="font-size:10px;padding:2px 8px;background:var(--bg3);border:1px solid var(--border);border-radius:20px;color:var(--text2);">${m}</span>`).join('')}
+        </div>` : '';
+      const gateHtml = b.gate ? `<div style="margin-top:10px;padding:8px 10px;background:var(--bg3);border-radius:var(--r2);font-size:11px;color:var(--text3);"><span style="font-weight:700;color:var(--amber);">Gate: </span>${b.gate}</div>` : '';
+      return `
+        <div style="border:1px solid ${borderColor};border-radius:var(--r);margin-bottom:8px;overflow:hidden;">
+          <div onclick="toggleBlockExpand(${b.num})" style="padding:12px 14px;cursor:pointer;display:flex;align-items:center;gap:10px;">
+            <div style="width:32px;height:32px;border-radius:50%;background:${statusColor[b.status]};display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;flex-shrink:0;">${b.num}</div>
+            <div style="flex:1;min-width:0;">
+              <div style="font-size:13px;font-weight:700;color:var(--text);">${b.name}</div>
+              <div style="font-size:11px;color:var(--text3);">${b.approxMonths}</div>
+            </div>
+            <span style="font-size:10px;padding:2px 8px;border-radius:20px;font-weight:700;background:${b.status==='active'?'var(--teal)':b.status==='draft'?'var(--acc2)':'var(--bg3)'};color:${b.status==='planned'?'var(--text3)':'#fff'};">${statusLabel[b.status]}</span>
+            <span style="color:var(--text3);font-size:16px;">${isExpanded ? '▲' : '▼'}</span>
+          </div>
+          ${isExpanded ? `
+          <div style="padding:0 14px 14px;border-top:1px solid var(--border);">
+            <div style="font-size:12px;color:var(--text2);margin-top:10px;">${b.goal}</div>
+            ${phasesHtml}
+            ${movesHtml}
+            ${gateHtml}
+          </div>` : ''}
+        </div>`;
+    }).join('');
+
+    // Current position pill
+    blockMap.innerHTML += `
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:12px 14px;margin-top:4px;">
+        <div style="font-size:10px;font-weight:700;color:var(--text3);margin-bottom:8px;">CURRENT POSITION</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;text-align:center;">
+          <div><div style="font-size:22px;font-weight:800;color:var(--teal);">1</div><div style="font-size:10px;color:var(--text3);">Block</div></div>
+          <div><div style="font-size:22px;font-weight:800;color:var(--acc);">${CFG.phase}</div><div style="font-size:10px;color:var(--text3);">Phase</div></div>
+          <div><div style="font-size:22px;font-weight:800;color:var(--amber);">${CFG.week}</div><div style="font-size:10px;color:var(--text3);">Week</div></div>
+        </div>
+      </div>`;
   }
+
+  // ── Intensity chart (current block) ──────────────────────────
   if (chart) {
     const heights = [35,45,55,25,50,62,72,32,68,78,88,38];
-    chart.innerHTML = heights.map((h, i) => `<div title="Week ${i+1}" style="flex:1;height:${h}%;background:${i+1===CFG.week?'var(--acc)':(i+1)%4===0?'var(--amber)':'var(--teal)'};border-radius:3px 3px 0 0;opacity:${i+1===CFG.week?'1':'.75'};"></div>`).join('');
+    chart.innerHTML = heights.map((h, i) =>
+      `<div title="Week ${i+1}" style="flex:1;height:${h}%;background:${i+1===CFG.week?'var(--acc)':(i+1)%4===0?'var(--amber)':'var(--teal)'};border-radius:3px 3px 0 0;opacity:${i+1===CFG.week?'1':'.75'};"></div>`
+    ).join('');
   }
+
+  // ── Next gate card ────────────────────────────────────────────
   if (gate) {
-    gate.innerHTML = `<div class="card" style="padding:12px;margin-top:12px;"><div style="font-size:12px;font-weight:700;color:var(--text3);margin-bottom:6px;">PHASE GATE</div><div style="font-size:12px;color:var(--text2);">${getPhaseWhy()}</div></div>`;
+    const nextGateWk = CFG.week <= 4 ? 4 : CFG.week <= 8 ? 8 : 12;
+    const weeksAway = nextGateWk - CFG.week;
+    const gateLabel = nextGateWk === 12 ? 'Block Review' : 'Deload + Phase Review';
+    gate.innerHTML = `
+      <div class="card" style="padding:12px;margin-top:12px;">
+        <div style="font-size:10px;font-weight:700;color:var(--amber);margin-bottom:6px;">NEXT GATE · Week ${nextGateWk}</div>
+        <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">${gateLabel}</div>
+        <div style="font-size:12px;color:var(--text3);margin-bottom:8px;">${weeksAway === 0 ? '⚡ This is your gate week — make the call.' : `${weeksAway} week${weeksAway===1?'':'s'} away`}</div>
+        <div style="font-size:11px;color:var(--text2);">Decision: <strong>Advance · Repeat · Deload · Pivot</strong></div>
+        <div style="font-size:11px;color:var(--text3);margin-top:4px;">Gate data: ${BLOCKS[0].gate}</div>
+        ${weeksAway === 0 ? `<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;">
+          <button onclick="phaseAction('advance')" style="padding:6px 12px;background:var(--teal);border:none;border-radius:var(--r2);color:#fff;font-size:12px;cursor:pointer;font-weight:600;">Advance</button>
+          <button onclick="phaseAction('repeat')" style="padding:6px 12px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--r2);color:var(--text2);font-size:12px;cursor:pointer;">Repeat</button>
+          <button onclick="phaseAction('deload')" style="padding:6px 12px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--r2);color:var(--text2);font-size:12px;cursor:pointer;">Deload</button>
+          <button onclick="phaseAction('pivot')" style="padding:6px 12px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--r2);color:var(--text2);font-size:12px;cursor:pointer;">Pivot</button>
+        </div>` : ''}
+      </div>`;
   }
+
+  // ── Week grid ─────────────────────────────────────────────────
   if (weekGrid) {
-    weekGrid.innerHTML = Array.from({length:12}, (_, i) => `<div class="pill${i+1===CFG.week?' pp':''}" style="text-align:center;padding:7px 0;">${i+1}</div>`).join('');
+    weekGrid.innerHTML = Array.from({length:12}, (_, i) =>
+      `<div class="pill${i+1===CFG.week?' pp':''}" style="text-align:center;padding:7px 0;">${i+1}</div>`
+    ).join('');
   }
+
+  // ── This week's schedule ──────────────────────────────────────
   if (weekSplit) {
     weekSplit.innerHTML = `<div class="card" style="padding:12px;margin-top:8px;font-size:12px;color:var(--text2);">${SCHEDULE[CFG.weekToggle].map((s,i)=>`<div style="display:flex;justify-content:space-between;gap:12px;padding:4px 0;border-bottom:1px solid var(--border);"><span>${DAY_NAMES[i]}</span><strong style="text-align:right;">${s}</strong></div>`).join('')}</div>`;
   }
+}
+
+function toggleBlockExpand(num) {
+  _expandedBlock = _expandedBlock === num ? null : num;
+  renderRoadmap();
 }
 
 function renderPhaseGate(p) {
