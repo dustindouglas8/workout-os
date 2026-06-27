@@ -25,6 +25,7 @@ SRC    = ROOT / "src"
 DIST   = ROOT / "docs"
 TMPL   = SRC / "app" / "template.html"
 EXERCISES = SRC / "data" / "exercises.json"
+EXERCISE_MEDIA = SRC / "data" / "exercise_media.json"
 
 # ── Manifest ──────────────────────────────────────────────────────────────────
 
@@ -135,18 +136,29 @@ def content_hash(content: str) -> str:
 
 
 def inject_exercises(html: str) -> str:
-    """Replace the EX_LIB placeholder with exercises.json data."""
+    """Replace exercise/media placeholders with JSON data."""
     if not EXERCISES.exists():
         print(f"  ERROR: exercise data not found at {EXERCISES}")
         raise SystemExit(1)
+    if not EXERCISE_MEDIA.exists():
+        print(f"  ERROR: exercise media data not found at {EXERCISE_MEDIA}")
+        raise SystemExit(1)
     exercises = json.loads(EXERCISES.read_text(encoding="utf-8"))
-    placeholder = "const EX_LIB = /*__EXERCISES_JSON__*/;"
-    if placeholder not in html:
+    media = json.loads(EXERCISE_MEDIA.read_text(encoding="utf-8"))
+    ex_placeholder = "const EX_LIB = /*__EXERCISES_JSON__*/;"
+    media_placeholder = "const MEDIA_LIB = /*__EXERCISE_MEDIA_JSON__*/;"
+    if ex_placeholder not in html:
         print(f"  ERROR: EX_LIB placeholder not found in template")
         raise SystemExit(1)
-    replacement = "const EX_LIB = " + json.dumps(exercises, ensure_ascii=False) + ";"
+    if media_placeholder not in html:
+        print(f"  ERROR: MEDIA_LIB placeholder not found in template")
+        raise SystemExit(1)
+    ex_replacement = "const EX_LIB = " + json.dumps(exercises, ensure_ascii=False) + ";"
+    media_replacement = "const MEDIA_LIB = " + json.dumps(media, ensure_ascii=False) + ";"
     print(f"  Exercises: {len(exercises)} entries from {EXERCISES.relative_to(ROOT)}")
-    return html.replace(placeholder, replacement, 1)
+    print(f"  Media:     {len(media)} entries from {EXERCISE_MEDIA.relative_to(ROOT)}")
+    html = html.replace(ex_placeholder, ex_replacement, 1)
+    return html.replace(media_placeholder, media_replacement, 1)
 
 
 # ── Build ──────────────────────────────────────────────────────────────────────

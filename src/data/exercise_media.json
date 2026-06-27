@@ -1,0 +1,614 @@
+[
+  {
+    "name": "Pull-Up",
+    "status": "needs_review",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/pull-up",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Exact enough for strict pull-up; local hollow-body cue remains primary."
+  },
+  {
+    "name": "Ring Push-Up",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Do not map to generic push-up unless labeled close variant."
+  },
+  {
+    "name": "KB Goblet Squat",
+    "status": "needs_review",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/goblet-squat",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Exact movement; needs final human review."
+  },
+  {
+    "name": "KB Bulgarian Split Squat",
+    "status": "needs_review",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/dumbbell-bulgarian-split-squat",
+    "match": "close_variant",
+    "label": "Close variant",
+    "notes": "Dumbbell version maps mechanics, not exact load."
+  },
+  {
+    "name": "KB Romanian Deadlift",
+    "status": "needs_review",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/romanian-deadlift",
+    "match": "close_variant",
+    "label": "Close variant",
+    "notes": "Barbell RDL source; local kettlebell hinge cues remain primary."
+  },
+  {
+    "name": "Nordic Hamstring Eccentric",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Safety-sensitive; exact source required before video display."
+  },
+  {
+    "name": "Slider Hamstring Curl",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Exact slider version needed."
+  },
+  {
+    "name": "Jump Squat",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "No mapped source yet."
+  },
+  {
+    "name": "KB Push Press",
+    "status": "needs_review",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/push-press",
+    "match": "close_variant",
+    "label": "Close variant",
+    "notes": "Barbell push press source; local kettlebell rack cue remains primary."
+  },
+  {
+    "name": "KB Single-Arm Row",
+    "status": "candidate",
+    "provider": "Fitbod / Virtuagym",
+    "url": "",
+    "match": "close_variant",
+    "label": "Close variant pending",
+    "notes": "Use local cues until exact kettlebell row URL is verified."
+  },
+  {
+    "name": "Ring Row",
+    "status": "needs_review",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/ring-row",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Exact ring row page; needs final human review."
+  },
+  {
+    "name": "Ring Dip",
+    "status": "needs_review",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/ring-dip",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Exact ring context; needs final human review."
+  },
+  {
+    "name": "Decline Ring Push-Up",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Generic decline push-up is close variant only; no approved URL yet."
+  },
+  {
+    "name": "Band External Rotation",
+    "status": "candidate",
+    "provider": "NASM / ACE",
+    "url": "",
+    "match": "exact",
+    "label": "Media pending",
+    "notes": "Exact NASM/ACE page still needs verification."
+  },
+  {
+    "name": "Dead Bug",
+    "status": "needs_review",
+    "provider": "NASM Exercise Library",
+    "url": "https://www.nasm.org/resource-center/exercise-library/dead-bug",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Exact page with video/common mistakes; needs final review."
+  },
+  {
+    "name": "Lateral Band Walk",
+    "status": "candidate",
+    "provider": "NASM / ACE",
+    "url": "",
+    "match": "exact",
+    "label": "Media pending",
+    "notes": "Exact page still needs verification."
+  },
+  {
+    "name": "Glute Bridge",
+    "status": "needs_review",
+    "provider": "NASM Exercise Library",
+    "url": "https://www.nasm.org/resource-center/exercise-library/floor-bridge",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "NASM names it Floor Bridge; exact bodyweight bridge pattern."
+  },
+  {
+    "name": "Single-Leg Glute Bridge",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Close to Glute Bridge, but unilateral anti-rotation cue is local primary."
+  },
+  {
+    "name": "KB Suitcase Carry",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Local cues only until exact source exists."
+  },
+  {
+    "name": "Tibialis Raise",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Local cues only until exact source exists."
+  },
+  {
+    "name": "Single-Leg Soleus Raise",
+    "status": "candidate",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/single-leg-calf-raise",
+    "match": "close_variant",
+    "label": "Close variant",
+    "notes": "Calf raise source; local bent-knee soleus cue is primary."
+  },
+  {
+    "name": "Pogo Hop",
+    "status": "candidate",
+    "provider": "ACE Dynamic Warm-Up PDF",
+    "url": "",
+    "match": "related",
+    "label": "Reference pending",
+    "notes": "Warm-up reference only; local pogo cues remain primary. Source URL was not deployed because it returned 403 during link check."
+  },
+  {
+    "name": "Jefferson Curl",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Safety-sensitive; exact source required before video display."
+  },
+  {
+    "name": "Skin the Cat",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Ring-skill-specific; needs custom or expert-reviewed source."
+  },
+  {
+    "name": "Active Hang",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Close to Dead Hang, but active shoulder-pack cue is local and should not use full hang as exact demo."
+  },
+  {
+    "name": "Shoulder CARs",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "FRC-style; no standard library coverage."
+  },
+  {
+    "name": "Hip CARs",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "FRC-style; pelvis-level cue is critical."
+  },
+  {
+    "name": "Neck CARs",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Safety-sensitive; local cues only until reviewed source exists."
+  },
+  {
+    "name": "90/90 Hip Stretch",
+    "status": "candidate",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/90-90-hip-stretch",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Verify both hip IR and ER are addressed."
+  },
+  {
+    "name": "Push-Up Plus",
+    "status": "candidate",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/push-up-plus",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Verify protraction-at-top cue."
+  },
+  {
+    "name": "Scapular Pull-Up",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "No mapped source yet."
+  },
+  {
+    "name": "Ring Fly",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Needs exact ring context or custom demo."
+  },
+  {
+    "name": "Slider Adductor Slide",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Exact slider version needed."
+  },
+  {
+    "name": "Slider Lateral Lunge",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Exact slider version needed."
+  },
+  {
+    "name": "KB Woodchop",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Local cues only until exact source exists."
+  },
+  {
+    "name": "Dead Hang",
+    "status": "needs_review",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/dead-hang",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Exact hang source; local decompression/grip cue stays primary."
+  },
+  {
+    "name": "Cross-Body Crawl",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Local cues only until exact source exists."
+  },
+  {
+    "name": "Hip Flexor Kneeling Stretch",
+    "status": "needs_review",
+    "provider": "NASM Exercise Library",
+    "url": "https://blog.nasm.org/stretches-for-beginners",
+    "match": "related",
+    "label": "Reference",
+    "notes": "Article includes kneeling hip flexor stretch; use as cue reference, not exact demo."
+  },
+  {
+    "name": "Pigeon Prep",
+    "status": "candidate",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/pigeon-pose",
+    "match": "close_variant",
+    "label": "Close variant",
+    "notes": "Source is full pigeon; program uses prep variation."
+  },
+  {
+    "name": "Pancake Stretch",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Local cues only; total duration required."
+  },
+  {
+    "name": "Physiological Sigh",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Local cues",
+    "notes": "Breathing regulation; no video source needed."
+  },
+  {
+    "name": "Supine Thoracic Release",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Local cues",
+    "notes": "Foam roller protocol; no exact source yet."
+  },
+  {
+    "name": "Exhale-Only Supine Reset",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Local cues",
+    "notes": "Not a training exercise; local breath cue primary."
+  },
+  {
+    "name": "Crocodile Breathing",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Local cues",
+    "notes": "Breathing regulation; local cues only."
+  },
+  {
+    "name": "4-7-8 Breath",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Local cues",
+    "notes": "Text/audio cue only; no video needed."
+  },
+  {
+    "name": "Shadow Boxing",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Local skill cues only."
+  },
+  {
+    "name": "Cat-Cow",
+    "status": "candidate",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/cat-cow",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Verify full spinal range, not neck-only."
+  },
+  {
+    "name": "Thoracic Rotation",
+    "status": "candidate",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/thoracic-rotation",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Verify movement comes from thoracic spine, not lumbar."
+  },
+  {
+    "name": "Hip Circle",
+    "status": "candidate",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/hip-circles",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Verify large-range standing version."
+  },
+  {
+    "name": "Ankle CARs",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "FRC-style; distinguish from passive ankle roll."
+  },
+  {
+    "name": "Ankle Roll",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Passive ankle mobility; local cues only."
+  },
+  {
+    "name": "Supine Spinal Twist",
+    "status": "candidate",
+    "provider": "NASM Exercise Library",
+    "url": "https://www.nasm.org/resource-center/exercise-library/supine-spinal-twist",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Verify exact page exists/current."
+  },
+  {
+    "name": "Seated Forward Fold",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Local cues only; pre-Jefferson curl spinal prep."
+  },
+  {
+    "name": "Supine Knee-to-Chest",
+    "status": "candidate",
+    "provider": "NASM Exercise Library",
+    "url": "https://www.nasm.org/resource-center/exercise-library/knee-to-chest",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Verify exact page exists/current."
+  },
+  {
+    "name": "Ab Roller",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Exact source needed."
+  },
+  {
+    "name": "L-sit Hold",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Exact skill source needed."
+  },
+  {
+    "name": "Scapular Push-Up",
+    "status": "candidate",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/scapular-push-up",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Verify no-elbow-bend cue."
+  },
+  {
+    "name": "Neck CAR",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Safety-sensitive; local cues only until reviewed source exists."
+  },
+  {
+    "name": "Single-Leg Calf Raise",
+    "status": "candidate",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/single-leg-calf-raise",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Exact calf raise pattern; local tempo cue remains primary."
+  },
+  {
+    "name": "Towel Hang",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Local towel grip cue primary."
+  },
+  {
+    "name": "KB Swing",
+    "status": "needs_review",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/kettlebell-swing",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Exact base swing; dead-stop variants need local cue override."
+  },
+  {
+    "name": "Nordic Hamstring Curl",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Safety-sensitive; exact source required before video display."
+  },
+  {
+    "name": "Archer Push-Up",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Exact calisthenics source needed."
+  },
+  {
+    "name": "Slider Chest Fly",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Common libraries may not have exact slider version."
+  },
+  {
+    "name": "KB Front Squat",
+    "status": "needs_review",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/kettlebell-front-squat",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Exact enough; verify single vs dual KB wording."
+  },
+  {
+    "name": "Y-T-W Prone",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Exact source needed."
+  },
+  {
+    "name": "Wall Slide",
+    "status": "candidate",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/wall-slide",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Verify elbows/wrists wall-contact cue."
+  },
+  {
+    "name": "World's Greatest Stretch",
+    "status": "candidate",
+    "provider": "Fitbod Exercise Pages",
+    "url": "https://fitbod.me/exercises/worlds-greatest-stretch",
+    "match": "exact",
+    "label": "Watch demo",
+    "notes": "Verify lunge + rotation sequence."
+  }
+]

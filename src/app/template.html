@@ -1189,6 +1189,7 @@ const SESSIONS = {
 // EXERCISE LIBRARY (preserved from v9, full 62 entries)
 // ═══════════════════════════════════════════════════════════════
 const EX_LIB = /*__EXERCISES_JSON__*/;
+const MEDIA_LIB = /*__EXERCISE_MEDIA_JSON__*/;
 
 // ═══════════════════════════════════════════════════════════════
 // NAVIGATION
@@ -1862,6 +1863,37 @@ function buildAccessoryBlock(acc, status, sessName) {
 }
 
 function escJs(s) { return s.replace(/'/g,"\\'").replace(/"/g,'&quot;'); }
+function escHtml(s) {
+  return String(s || '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+}
+
+function getMediaRecord(name) {
+  return MEDIA_LIB.find(m => m.name && m.name.toLowerCase() === String(name || '').toLowerCase()) || null;
+}
+
+function renderMediaBlock(name) {
+  const media = getMediaRecord(name);
+  const status = media ? media.status : 'missing';
+  const match = media ? media.match : 'missing';
+  const label = media && media.label ? media.label : 'Media pending';
+  const notes = media && media.notes ? media.notes : '';
+  const provider = media && media.provider ? media.provider : '';
+  const url = media && media.url ? media.url : '';
+  const showLink = !!url && ['exact','close_variant','related'].includes(match);
+  const badgeColor = match === 'exact' ? 'var(--teal)' : match === 'close_variant' ? 'var(--amber)' : match === 'related' ? 'var(--acc)' : 'var(--text3)';
+  const statusText = status === 'approved' ? 'approved' : status === 'needs_review' ? 'needs review' : status === 'candidate' ? 'candidate' : 'pending';
+  return `<div style="padding:0 16px 12px;">
+    <div style="font-size:11px;color:var(--text3);margin-bottom:6px;font-weight:600;">MEDIA</div>
+    <div style="border:1px solid var(--border);background:var(--bg3);border-radius:var(--r2);padding:10px;">
+      <div style="display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:${notes || provider ? '6px' : '0'};">
+        ${showLink ? `<a href="${escHtml(url)}" target="_blank" rel="noopener noreferrer" style="font-size:13px;color:var(--teal);font-weight:700;text-decoration:none;">${escHtml(label)} ↗</a>` : `<span style="font-size:13px;color:var(--text2);font-weight:700;">${escHtml(label)}</span>`}
+        <span style="font-size:10px;color:#fff;background:${badgeColor};border-radius:999px;padding:3px 7px;white-space:nowrap;">${escHtml(match.replace('_',' '))}</span>
+      </div>
+      ${provider ? `<div style="font-size:11px;color:var(--text3);">Source: ${escHtml(provider)} · ${escHtml(statusText)}</div>` : `<div style="font-size:11px;color:var(--text3);">No reviewed source mapped yet.</div>`}
+      ${notes ? `<div style="font-size:11px;color:var(--text3);margin-top:4px;">${escHtml(notes)}</div>` : ''}
+    </div>
+  </div>`;
+}
 
 // ── SET LOGGING ──────────────────────────────────────────────────────────────
 let _pendingSet = null;
@@ -2071,6 +2103,7 @@ function openDrawer(name) {
         <div style="font-size:18px;font-weight:700;margin-bottom:4px;">${name}</div>
         <div style="font-size:11px;color:var(--teal);font-weight:600;text-transform:uppercase;letter-spacing:.08em;">${ex.pat || ''}</div>
       </div>
+      ${renderMediaBlock(name)}
       ${cueList.length ? `<div style="padding:0 16px 12px;"><div style="font-size:11px;color:var(--text3);margin-bottom:6px;font-weight:600;">CUES</div>${cueList.map(c=>`<div style="font-size:13px;color:var(--text2);padding:4px 0;border-bottom:1px solid var(--border);">${c}</div>`).join('')}</div>` : ''}
       ${ex.mistakes && ex.mistakes.length ? `<div style="padding:0 16px 12px;"><div style="font-size:11px;color:var(--text3);margin-bottom:6px;font-weight:600;">COMMON MISTAKES</div>${ex.mistakes.map(m=>`<div style="font-size:12px;color:var(--amber);padding:3px 0;">⚠ ${m}</div>`).join('')}</div>` : ''}
       ${subs.length ? `<div style="padding:0 16px 12px;"><div style="font-size:11px;color:var(--text3);margin-bottom:6px;font-weight:600;">EASIER / HARDER</div><div style="font-size:12px;color:var(--text2);">Easier: ${ex.reg || '—'}</div><div style="font-size:12px;color:var(--text2);margin-top:2px;">Harder: ${ex.prog || '—'}</div></div>` : ''}

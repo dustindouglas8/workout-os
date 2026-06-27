@@ -21,6 +21,7 @@ ROOT      = Path(__file__).parent.parent
 TMPL      = ROOT / "src" / "app" / "template.html"
 DIST      = ROOT / "docs" / "index.html"
 EXERCISES = ROOT / "src" / "data" / "exercises.json"
+EXERCISE_MEDIA = ROOT / "src" / "data" / "exercise_media.json"
 
 ERRORS   = []
 WARNINGS = []
@@ -38,6 +39,14 @@ def load_exercises() -> list[dict]:
         err(f"Exercise data not found: {EXERCISES}")
         return []
     return json.loads(EXERCISES.read_text(encoding="utf-8"))
+
+
+def load_exercise_media() -> list[dict]:
+    """Load exercise media mapping records."""
+    if not EXERCISE_MEDIA.exists():
+        err(f"Exercise media data not found: {EXERCISE_MEDIA}")
+        return []
+    return json.loads(EXERCISE_MEDIA.read_text(encoding="utf-8"))
 
 
 def extract_session_exercise_names(html: str) -> list[str]:
@@ -179,6 +188,40 @@ def check_exlib_cue_completeness(exercises: list[dict]):
         ok(f"EX_LIB entries: all have setup/exec/breath fields")
 
 
+def check_media_records(exercises: list[dict], media: list[dict]):
+    """Every exercise should have a media record and variant links must be labeled."""
+    exercise_names = {e["n"] for e in exercises}
+    media_by_name = {m.get("name"): m for m in media}
+    missing = sorted(n for n in exercise_names if n not in media_by_name)
+    extras = sorted(n for n in media_by_name if n and n not in exercise_names)
+    if missing:
+        for n in missing:
+            err(f"Exercise has no media record: '{n}'")
+    else:
+        ok(f"Media records: all {len(exercise_names)} exercises covered")
+    if extras:
+        for n in extras:
+            warn(f"Media record has no matching exercise: '{n}'")
+
+    bad = []
+    for m in media:
+        match = m.get("match")
+        status = m.get("status")
+        url = m.get("url", "")
+        label = m.get("label", "")
+        if match == "close_variant" and "variant" not in label.lower():
+            bad.append(f"'{m.get('name')}' close_variant label should include variant")
+        if match == "missing" and url:
+            bad.append(f"'{m.get('name')}' has missing match but also has URL")
+        if status in {"needs_review", "candidate"} and match == "exact" and url and not label:
+            bad.append(f"'{m.get('name')}' exact candidate needs a visible label")
+    if bad:
+        for b in bad:
+            err(f"Media mapping: {b}")
+    else:
+        ok("Media mappings: labels/statuses are consistent")
+
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def validate(path: Path):
@@ -195,6 +238,7 @@ def validate(path: Path):
     print(f"   Size: {len(html):,} chars, {lines} lines\n")
 
     exercises     = load_exercises()
+    media         = load_exercise_media()
     lib_names     = [e["n"] for e in exercises]
     session_names = extract_session_exercise_names(html)
     warmup_names  = extract_warmup_names(html)
@@ -203,6 +247,7 @@ def validate(path: Path):
     check_session_exercises_have_lib_entries(session_names, lib_names)
     check_warmup_exercises_have_lib_entries(warmup_names, lib_names)
     check_exlib_cue_completeness(exercises)
+    check_media_records(exercises, media)
     check_safety_sensitive(exercises)
     check_timed_exercises_have_duration(html)
     check_stale_runtime_ids(html)
