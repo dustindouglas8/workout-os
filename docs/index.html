@@ -493,7 +493,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Training OS">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
-  <!-- Built: 2026-06-27 05:14 UTC -->
+  <!-- Built: 2026-06-27 14:54 UTC -->
 </head>
 <body>
 
@@ -2084,11 +2084,11 @@ function openDrawer(name) {
       ${subs.length ? `<div style="padding:0 16px 12px;"><div style="font-size:11px;color:var(--text3);margin-bottom:6px;font-weight:600;">EASIER / HARDER</div><div style="font-size:12px;color:var(--text2);">Easier: ${ex.reg || '—'}</div><div style="font-size:12px;color:var(--text2);margin-top:2px;">Harder: ${ex.prog || '—'}</div></div>` : ''}
     `;
   }
-  drawer.classList.add('open');
+  drawer.classList.add('active');
 }
 
 function closeDrawer() {
-  document.getElementById('ex-drawer').classList.remove('open');
+  document.getElementById('ex-drawer').classList.remove('active');
 }
 
 // ── SESSION LOG (SECTION 5) ───────────────────────────────────────────────────
