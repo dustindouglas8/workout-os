@@ -1258,6 +1258,125 @@ const SESSIONS = {
     note: 'Friday is not a rest day. It is active skill work. The absence of fatigue is the point.'
   },
 
+  // ── BLOCK 3 SESSIONS — Winter Hypertrophy ─────────────────────
+  // Equipment: KB + rings + bands + adjustable DBs (10–55 lb)
+  // Philosophy: DBs unlock heavier loading on chest, arms, and shoulders
+  //             for the first time. Full body volume sweep. Mass-building window.
+
+  'Upper A — Hypertrophy': {
+    warmup: { moves: ['Shoulder CARs × 5/side','Wall Slide × 8','Scapular Push-Up × 10'], type:'upper' },
+    supersets: [
+      { id:'b3ua-ss-a', label:'Superset A', rounds: ()=>gyrRounds(),
+        a1: { n:'DB Floor Press', rx:'Phase 1: 3×8–10 · Phase 2: 4×8–10 · Phase 3: 4×6–8 @ 4-1-X-0', cue:'Elbows at 45°. 4s lower until triceps touch floor, 1s pause, explosive drive. Heaviest pressing you\'ve done — use it.' },
+        a2: { n:'DB Chest-Supported Row', rx:'Same rounds × 10–12 reps @ 4-1-X-0', cue:'Chest on inclined surface. Full hang at bottom — 4s lower. Row to lower ribs. Squeeze 2s at top. No lower back involvement.' },
+        restSecs: 75,
+        whyCopy: 'No rest between A1 and A2. Floor press + chest-supported row — horizontal push/pull with zero cheating. Chest supported eliminates all momentum on the row.'
+      },
+      { id:'b3ua-ss-b', label:'Superset B', rounds: ()=>gyrRounds(),
+        a1: { n:'Pull-Up', rx:'Same rounds × 6–8 reps @ 3-1-X-0', cue:'Dead hang start. Pull chest to bar. 3s lower to full hang. Weighted version coming in Phase 2+.' },
+        a2: { n:'Ring Fly', rx:'Same rounds × 10–12 reps', cue:'Soft elbow. Open wide — 2s pause at full stretch. Squeeze closed from the chest. Complement to floor press.' },
+        restSecs: 60,
+        whyCopy: 'No rest between A1 and A2. Pull-up + ring fly — vertical pull paired with chest isolation. Lats recover while pecs work.'
+      },
+    ],
+    accessory: {
+      label: 'Accessory C — Biceps',
+      type: () => hasMyo() ? 'myo' : 'straight',
+      exercises: [
+        { n:'DB Incline Curl', rx_straight:'2×10–12/side', rx_myo:'1 activation (10 reps) + 3 clusters × 5 reps, 5s rest', cue:'Shoulder stays behind hip — full long head stretch. 3s lower to full extension every rep. No swinging.' },
+        { n:'DB Hammer Curl', rx_straight:'2×10–12', rx_myo:'1 activation (12 reps) + 3 clusters × 5 reps', cue:'Neutral grip throughout. Brachialis development creates arm thickness under the bicep peak.' },
+      ],
+      phase3extra: { n:'DB Pullover', rx:'1×10 (floor or ottoman)', cue:'Full lat stretch at bottom. Drive back up from lats, not arms. Ribs open on the way down — feel the serratus stretch.' }
+    },
+    note: 'Upper A (B3): first time chest + biceps get dedicated heavy loading. DB floor press is the anchor — add load every 2–3 sessions.'
+  },
+
+  'Upper B — Hypertrophy': {
+    warmup: { moves: ['Shoulder CARs × 5/side','Band Pull-Apart × 15','Wall Slide × 8'], type:'upper' },
+    supersets: [
+      { id:'b3ub-ss-a', label:'Superset A', rounds: ()=>gyrRounds(),
+        a1: { n:'DB Lateral Raise', rx:'Phase 1: 3×12–15 · Phase 2: 4×12–15 · Phase 3: 4×12 @ 3-0-X-3', cue:'Lead with elbows. Slight forward lean. Pinky higher than thumb at top. 3s lower — the eccentric builds medial delt.' },
+        a2: { n:'DB Rear Delt Fly', rx:'Same rounds × 12–15 reps @ 3-0-X-0', cue:'Hinge forward 45°+. Lead with elbows — squeeze rear delts, not traps. Pairs with lateral raise to build full 3D shoulder width.' },
+        restSecs: 60,
+        whyCopy: 'No rest between A1 and A2. Medial delt + rear delt pair — side and back of the shoulder in one superset. The posture-and-width combo.'
+      },
+      { id:'b3ub-ss-b', label:'Superset B', rounds: ()=>gyrRounds(),
+        a1: { n:'Weighted Pull-Up', rx:'Phase 1: 3×4–6 · Phase 2: 4×4–6 · Phase 3: 4×3–5 @ 3-1-X-0', cue:'Belt or KB between feet. Same form as strict pull-up — no kipping. 3s lower to full dead hang. Load should allow full ROM.' },
+        a2: { n:'Ring Dip', rx:'Same rounds × 8–10 reps', cue:'Lean forward 25° = chest emphasis. Controlled descent. Full lockout at top. Weighted pull-up strength demands recovery — 75s between rounds.' },
+        restSecs: 75,
+        whyCopy: 'No rest between A1 and A2. Weighted pull-up + ring dip — the strength compound pair. This is where structural upper body strength gets built.'
+      },
+    ],
+    accessory: {
+      label: 'Accessory C — Triceps + Postural',
+      type: () => hasMyo() ? 'myo' : 'straight',
+      exercises: [
+        { n:'DB Overhead Tricep Extension', rx_straight:'2×12–15', rx_myo:'1 activation (12 reps) + 3 clusters × 5 reps', cue:'Elbows point up throughout. Long head stretch is the priority — 3s lower. Biggest tricep muscle gets hit here.' },
+        { n:'Y-T-W Prone', rx_straight:'2×8 per position (Y, T, W)', rx_myo:'2×8 per position', cue:'Tiny weight. Each position 1s hold. Lower traps + rhomboids + rear delt. Non-negotiable postural work.' },
+      ],
+      phase3extra: { n:'Band Face Pull', rx:'1×15 (shoulder health close-out)', cue:'Pull to forehead. External rotate at end — thumbs point back. Elbows high. Shoulder health maintenance.' }
+    },
+    note: 'Upper B (B3): shoulder width + arm strength. Weighted pull-up is the performance anchor — track load weekly.'
+  },
+
+  'Lower A — Hypertrophy': {
+    warmup: { moves: ['Hip CARs × 5/side','World\'s Greatest Stretch × 3/side','Hip Circle × 10'], type:'lower' },
+    supersets: [
+      { id:'b3la-ss-a', label:'Superset A', rounds: ()=>gyrRounds(),
+        a1: { n:'DB Bulgarian Split Squat', rx:'Phase 1: 3×8/side · Phase 2: 4×8/side · Phase 3: 4×6–8/side @ 4-2-1-0', cue:'DBs at sides — heavier than KB allowed. 4s lower, 2s pause at bottom. Front foot far enough forward. Drive through heel to stand.' },
+        a2: { n:'DB Romanian Deadlift', rx:'Same rounds × 10 reps @ 4-2-1-0', cue:'DBs track close to legs. 4s lower, 2s stretch pause at bottom. Feel hamstring load. Drive hips forward — not back up.' },
+        restSecs: 90,
+        whyCopy: 'No rest between A1 and A2. DB split squat + DB RDL — unilateral quad/hinge pair. Heavier DBs mean real hypertrophy stimulus for the first time this program.'
+      },
+      { id:'b3la-ss-b', label:'Superset B', rounds: ()=>Math.min(gyrRounds(), CFG.phase===3?3:2),
+        a1: { n:'KB Goblet Squat', rx:'Same rounds × 12 reps @ 3-2-1-0', cue:'Elbows inside knees at bottom. 3s lower, 2s pause. Volume layer on top of A1 split squats.' },
+        a2: { n:'Single-Leg Glute Bridge', rx:'Same rounds × 12/side @ 2-2-2', cue:'Hips level — no rotation toward the lifted leg. 2s at top. Drive through heel. Glute isolation after heavy hip hinge.' },
+        restSecs: 60,
+        whyCopy: 'No rest between A1 and A2. Squat volume + unilateral glute — additional quad and glute work while legs are still warm.'
+      },
+    ],
+    accessory: {
+      label: 'Accessory C — Hamstring + Glute Med',
+      type: () => 'straight',
+      exercises: [
+        { n:'Nordic Hamstring Curl', rx_straight:'3×5 @ 5s lower — use hands to return', cue:'Hips extended throughout. Lower as slow as possible — eccentric hamstring loading is the stimulus. Not a strength set — it\'s injury prevention.' },
+        { n:'Lateral Band Walk', rx_straight:'20 steps each direction × 2', cue:'Band above knees. Abductor + glute med. Prevent knee valgus. Non-negotiable after heavy split squats.' },
+      ],
+      phase3extra: { n:'Hanging Knee Raise', rx:'2×10 — L-sit skill prep', cue:'Dead hang start. Drive knees to chest — pelvis tilts back at top. No swing. Early preparation for Block 4 L-sit work.' }
+    },
+    note: 'Lower A (B3): quad-dominant hypertrophy. DB split squat is the load anchor. This is where leg mass gets built.'
+  },
+
+  'Lower B — Hypertrophy': {
+    warmup: { moves: ['Hip CARs × 5/side','Glute Bridge × 10 · 2s hold','Lateral Band Walk × 15 steps/side'], type:'lower' },
+    supersets: [
+      { id:'b3lb-ss-a', label:'Superset A', rounds: ()=>gyrRounds(),
+        a1: { n:'KB Swing', rx:'Phase 1: 3×12 · Phase 2: 4×12 · Phase 3: 4×15', cue:'Explosive hip extension. KB floats from glutes — not arm pull. Power output precedes eccentric hamstring work.' },
+        a2: { n:'Nordic Hamstring Curl', rx:'Same rounds × 5 reps @ 5s lower', cue:'Lower as slow as possible. Use hands to return. Following swings with eccentric loading maximizes hamstring stimulus.' },
+        restSecs: 90,
+        whyCopy: 'No rest between A1 and A2. KB swing (concentric power) + Nordic (eccentric) — the full hamstring stimulus spectrum in one superset.'
+      },
+      { id:'b3lb-ss-b', label:'Superset B', rounds: ()=>Math.min(gyrRounds(), CFG.phase===3?3:2),
+        a1: { n:'Slider Hamstring Curl', rx:'Same rounds × 10 reps', cue:'Bridge up first. Slide heels in. Eccentric focus — lower slowly. Hamstring isolation after compound work.' },
+        a2: { n:'DB Romanian Deadlift', rx:'Same rounds × 10 reps @ 3-2-1-0', cue:'Lighter than Lower A. Hip hinge pattern maintenance. 3s lower, 2s pause at bottom.' },
+        restSecs: 60,
+        whyCopy: 'No rest between A1 and A2. Slider curl + RDL — additional hamstring and posterior chain volume in the second superset.'
+      },
+    ],
+    accessory: {
+      label: 'Accessory C — Achilles Circuit (non-negotiable)',
+      type: () => 'circuit',
+      exercises: [
+        { n:'Single-Leg Soleus Raise', rx_straight:'1×12/side — full heel drop each rep', cue:'Slight knee bend. Elevated surface. Achilles tendon loading. Full ROM — heel below surface on the lower.' },
+        { n:'Tibialis Raise', rx_straight:'1×20 — heel against wall', cue:'Heels 4in from wall. Lift toes high, hold 1s. Balances calf/Achilles loading. Shin splint prevention.' },
+        { n:'Pogo Hop', rx_straight:'1×20 reactive reps', cue:'Elastic Achilles. Stiff ankles. Minimal contact time. Small amplitude. Closes the session with reactive tendon work.' },
+      ],
+      circuitRounds: () => CFG.phase === 1 ? 1 : 2,
+      phase3extra: { n:'Butterfly Stretch', rx:'90s — add PAILs (B4 prep)', cue:'Soles together, knees out. Lean from hips. PAILs: press knees into floor 5s, then relax deeper. Block 4 hip work starts now.' }
+    },
+    note: 'Lower B (B3): posterior chain power + eccentric loading. KB swing differentiates it from Lower A squat emphasis. Achilles circuit is required — do not skip.'
+  },
+
 };
 
 // ═══════════════════════════════════════════════════════════════

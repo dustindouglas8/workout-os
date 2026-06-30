@@ -4,20 +4,11 @@
     "pat": "Pull",
     "travel": false,
     "cue": "Dead hang start, hollow body, chest to bar.",
-    "muscles": [
-      "lats",
-      "rhomboids",
-      "biceps",
-      "lower traps"
-    ],
+    "muscles": ["lats", "rhomboids", "biceps", "lower traps"],
     "setup": "Grip shoulder-width. Active hang — depress + retract before first rep.",
     "exec": "Pull from lats. Elbow drives down and back. Chin above bar.",
     "breath": "Exhale on pull, inhale on lower.",
-    "mistakes": [
-      "Kipping",
-      "Shrugging at top",
-      "Partial ROM"
-    ],
+    "mistakes": ["Kipping", "Shrugging at top", "Partial ROM"],
     "reg": "Band-assisted or eccentric only",
     "prog": "Vest, ring pull-up, weighted"
   },
@@ -26,19 +17,11 @@
     "pat": "Push",
     "travel": false,
     "cue": "Body rigid. Full chest stretch at bottom. Rotate fists neutral at top.",
-    "muscles": [
-      "chest",
-      "triceps",
-      "anterior delt",
-      "rotator cuff"
-    ],
+    "muscles": ["chest", "triceps", "anterior delt", "rotator cuff"],
     "setup": "Rings at chest height. Body in plank.",
     "exec": "Full ROM. Rings move naturally.",
     "breath": "Inhale down, exhale up.",
-    "mistakes": [
-      "Rings drifting",
-      "No pause at bottom"
-    ],
+    "mistakes": ["Rings drifting", "No pause at bottom"],
     "reg": "Standard push-up",
     "prog": "Vest, archer ring push-up"
   },
@@ -47,20 +30,11 @@
     "pat": "Squat",
     "travel": false,
     "cue": "Elbows inside knees at bottom. Tall chest throughout. Full depth.",
-    "muscles": [
-      "quads",
-      "glutes",
-      "adductors",
-      "core"
-    ],
+    "muscles": ["quads", "glutes", "adductors", "core"],
     "setup": "KB held vertically at chest. Feet shoulder-width, toes out 10–30°.",
     "exec": "Squat deep. Push knees out.",
     "breath": "Inhale down, exhale up.",
-    "mistakes": [
-      "Heels rising",
-      "Chest caving",
-      "Not reaching depth"
-    ],
+    "mistakes": ["Heels rising", "Chest caving", "Not reaching depth"],
     "reg": "Bodyweight squat",
     "prog": "KB front squat, vest"
   },
@@ -69,18 +43,11 @@
     "pat": "Squat",
     "travel": false,
     "cue": "2s pause at bottom. Front foot far enough forward.",
-    "muscles": [
-      "quads",
-      "glutes",
-      "hip flexors"
-    ],
+    "muscles": ["quads", "glutes", "hip flexors"],
     "setup": "Rear foot on bench. Front foot 2 steps forward.",
     "exec": "Lower controlled. Pause. Drive up.",
     "breath": "Inhale down, exhale up.",
-    "mistakes": [
-      "Heel rising",
-      "Torso collapsing"
-    ],
+    "mistakes": ["Heel rising", "Torso collapsing"],
     "reg": "Reverse lunge",
     "prog": "Heavier KB, vest"
   },
@@ -89,18 +56,11 @@
     "pat": "Hinge",
     "travel": false,
     "cue": "Hip hinge. KB close to legs. Long spine throughout.",
-    "muscles": [
-      "hamstrings",
-      "glutes",
-      "spinal erectors"
-    ],
+    "muscles": ["hamstrings", "glutes", "spinal erectors"],
     "setup": "Stand tall. KB at arms' length.",
     "exec": "Hinge from hips. Lower KB close to legs. Drive hips forward to return.",
     "breath": "Inhale on lower, exhale on stand.",
-    "mistakes": [
-      "Rounding back",
-      "Knee bend instead of hip hinge"
-    ],
+    "mistakes": ["Rounding back", "Knee bend instead of hip hinge"],
     "reg": "Shorter ROM or lighter",
     "prog": "Single-leg, heavier"
   },
@@ -109,17 +69,11 @@
     "pat": "Hinge",
     "travel": true,
     "cue": "Lower as slowly as possible. 5+ seconds. Use hands to return.",
-    "muscles": [
-      "hamstrings",
-      "glutes"
-    ],
+    "muscles": ["hamstrings", "glutes"],
     "setup": "Kneeling. Feet anchored firmly.",
     "exec": "Keep hips extended. Lower from knees.",
     "breath": "Exhale on lowering.",
-    "mistakes": [
-      "Hips breaking",
-      "Dropping fast"
-    ],
+    "mistakes": ["Hips breaking", "Dropping fast"],
     "reg": "Slider curl, towel curl",
     "prog": "Partial concentric, full Nordic"
   },
@@ -128,16 +82,11 @@
     "pat": "Hinge",
     "travel": false,
     "cue": "Bridge up first. Slide heels in. Lower controlled.",
-    "muscles": [
-      "hamstrings",
-      "glutes"
-    ],
+    "muscles": ["hamstrings", "glutes"],
     "setup": "Supine. Heels on sliders. Hips up.",
     "exec": "Curl in, controlled return.",
     "breath": "Exhale on curl.",
-    "mistakes": [
-      "Hips dropping"
-    ],
+    "mistakes": ["Hips dropping"],
     "reg": "Single-leg bridge",
     "prog": "Single-leg slider curl"
   },
@@ -146,18 +95,11 @@
     "pat": "Squat",
     "travel": true,
     "cue": "Land soft. Max height. Explosive hip extension.",
-    "muscles": [
-      "quads",
-      "glutes",
-      "calves"
-    ],
+    "muscles": ["quads", "glutes", "calves"],
     "setup": "Feet shoulder-width.",
     "exec": "Squat and jump explosively. Land with soft knees.",
     "breath": "Exhale on jump.",
-    "mistakes": [
-      "Knees caving on landing",
-      "No full extension"
-    ],
+    "mistakes": ["Knees caving on landing", "No full extension"],
     "reg": "Box squat",
     "prog": "Vest"
   },
@@ -166,17 +108,11 @@
     "pat": "Push",
     "travel": false,
     "cue": "Strict first 2 reps, push press last 4.",
-    "muscles": [
-      "deltoid",
-      "triceps",
-      "legs"
-    ],
+    "muscles": ["deltoid", "triceps", "legs"],
     "setup": "KB racked at shoulders.",
     "exec": "Dip slightly, drive up.",
     "breath": "Exhale on press.",
-    "mistakes": [
-      "No leg drive"
-    ],
+    "mistakes": ["No leg drive"],
     "reg": "Strict press",
     "prog": "Heavier"
   },
@@ -185,18 +121,11 @@
     "pat": "Pull",
     "travel": false,
     "cue": "2s pause at top. Full extension at bottom.",
-    "muscles": [
-      "lats",
-      "rhomboids",
-      "biceps"
-    ],
+    "muscles": ["lats", "rhomboids", "biceps"],
     "setup": "Split stance, hand on bench.",
     "exec": "3s lower, 2s pause at top.",
     "breath": "Exhale on pull.",
-    "mistakes": [
-      "Torso rotating",
-      "No pause"
-    ],
+    "mistakes": ["Torso rotating", "No pause"],
     "reg": "Lighter load",
     "prog": "Heavier, Pendlay row"
   },
@@ -205,19 +134,11 @@
     "pat": "Pull",
     "travel": false,
     "cue": "Feet elevated = harder. Full retraction at top.",
-    "muscles": [
-      "rhomboids",
-      "mid traps",
-      "biceps",
-      "rear delt"
-    ],
+    "muscles": ["rhomboids", "mid traps", "biceps", "rear delt"],
     "setup": "Rings low. Body inclined.",
     "exec": "Pull chest to rings. Hold. Lower slow.",
     "breath": "Exhale on pull.",
-    "mistakes": [
-      "Hips sagging",
-      "No retraction"
-    ],
+    "mistakes": ["Hips sagging", "No retraction"],
     "reg": "Less incline",
     "prog": "Single-arm or feet higher"
   },
@@ -226,17 +147,11 @@
     "pat": "Push",
     "travel": false,
     "cue": "Lean forward 25° = pec emphasis.",
-    "muscles": [
-      "chest",
-      "triceps",
-      "anterior delt"
-    ],
+    "muscles": ["chest", "triceps", "anterior delt"],
     "setup": "Rings at chest height. Forward lean.",
     "exec": "Lower controlled, drive up.",
     "breath": "Inhale down, exhale up.",
-    "mistakes": [
-      "No forward lean"
-    ],
+    "mistakes": ["No forward lean"],
     "reg": "Chair dip",
     "prog": "Vest"
   },
@@ -245,16 +160,11 @@
     "pat": "Push",
     "travel": false,
     "cue": "Feet elevated. Upper chest emphasis.",
-    "muscles": [
-      "upper chest",
-      "anterior delt"
-    ],
+    "muscles": ["upper chest", "anterior delt"],
     "setup": "Feet on chair, rings lower.",
     "exec": "Full ROM.",
     "breath": "Inhale down, exhale up.",
-    "mistakes": [
-      "Hips piking"
-    ],
+    "mistakes": ["Hips piking"],
     "reg": "Flat push-up",
     "prog": "Vest"
   },
@@ -263,17 +173,11 @@
     "pat": "Rehab",
     "travel": true,
     "cue": "Elbow at 90°, upper arm pinned. Rotate outward only.",
-    "muscles": [
-      "infraspinatus",
-      "teres minor"
-    ],
+    "muscles": ["infraspinatus", "teres minor"],
     "setup": "Band at elbow height. Elbow pinned to side.",
     "exec": "Rotate outward. Control return.",
     "breath": "Normal.",
-    "mistakes": [
-      "Elbow drifting",
-      "Squeezing at end range"
-    ],
+    "mistakes": ["Elbow drifting", "Squeezing at end range"],
     "reg": "Lighter band",
     "prog": "Heavier band, 1s pause"
   },
@@ -282,18 +186,11 @@
     "pat": "Core",
     "travel": true,
     "cue": "Lower back flat throughout. Exhale each rep. TVA braced.",
-    "muscles": [
-      "TVA",
-      "diaphragm",
-      "lumbar stabilizers"
-    ],
+    "muscles": ["TVA", "diaphragm", "lumbar stabilizers"],
     "setup": "Supine. Arms over chest. Knees 90°.",
     "exec": "Extend opposite arm + leg. Back stays flat.",
     "breath": "Exhale on extension.",
-    "mistakes": [
-      "Back arching",
-      "Moving too fast"
-    ],
+    "mistakes": ["Back arching", "Moving too fast"],
     "reg": "Single limb only",
     "prog": "Add weight"
   },
@@ -302,16 +199,11 @@
     "pat": "Rehab",
     "travel": true,
     "cue": "Abductor + glute med. Prevent knee valgus.",
-    "muscles": [
-      "glute med",
-      "hip abductors"
-    ],
+    "muscles": ["glute med", "hip abductors"],
     "setup": "Band above knees.",
     "exec": "Side steps. Keep tension.",
     "breath": "Normal.",
-    "mistakes": [
-      "Feet turning out too much"
-    ],
+    "mistakes": ["Feet turning out too much"],
     "reg": "No band",
     "prog": "Heavier band"
   },
@@ -320,18 +212,11 @@
     "pat": "Rehab",
     "travel": true,
     "cue": "Drive through heels. 2s hold at top.",
-    "muscles": [
-      "glutes",
-      "hamstrings",
-      "TVA"
-    ],
+    "muscles": ["glutes", "hamstrings", "TVA"],
     "setup": "Supine. Feet flat, knees bent.",
     "exec": "Drive hips up. Squeeze glutes. Hold.",
     "breath": "Exhale on drive.",
-    "mistakes": [
-      "Hyperextending lumbar",
-      "No squeeze"
-    ],
+    "mistakes": ["Hyperextending lumbar", "No squeeze"],
     "reg": "Isometric only",
     "prog": "Single-leg, band above knees"
   },
@@ -340,18 +225,11 @@
     "pat": "Rehab",
     "travel": true,
     "cue": "Unilateral. Keep hips level — no rotation toward the lifted leg.",
-    "muscles": [
-      "glutes",
-      "hamstrings",
-      "TVA"
-    ],
+    "muscles": ["glutes", "hamstrings", "TVA"],
     "setup": "Supine. One foot flat, knee bent. Other leg extended or tucked.",
     "exec": "Drive hips up through the planted heel. Squeeze glute. Hold, then lower with control.",
     "breath": "Exhale on drive.",
-    "mistakes": [
-      "Hips rotating/dropping toward lifted leg",
-      "Pushing through lower back"
-    ],
+    "mistakes": ["Hips rotating/dropping toward lifted leg", "Pushing through lower back"],
     "reg": "Bilateral glute bridge",
     "prog": "Add KB on hip, slow eccentric"
   },
@@ -360,18 +238,11 @@
     "pat": "Carry",
     "travel": false,
     "cue": "Anti-lateral flexion. Stay tall.",
-    "muscles": [
-      "QL",
-      "obliques",
-      "glutes",
-      "traps"
-    ],
+    "muscles": ["QL", "obliques", "glutes", "traps"],
     "setup": "KB at side.",
     "exec": "Walk. Resist side-lean.",
     "breath": "Normal.",
-    "mistakes": [
-      "Leaning to KB"
-    ],
+    "mistakes": ["Leaning to KB"],
     "reg": "Shorter distance",
     "prog": "Heavier"
   },
@@ -380,16 +251,11 @@
     "pat": "Rehab",
     "travel": true,
     "cue": "Heels 4in from wall. Lift toes high. Hold 1s.",
-    "muscles": [
-      "tibialis anterior"
-    ],
+    "muscles": ["tibialis anterior"],
     "setup": "Back against wall.",
     "exec": "Full ROM. Control lower.",
     "breath": "Normal.",
-    "mistakes": [
-      "Rushing",
-      "Partial ROM"
-    ],
+    "mistakes": ["Rushing", "Partial ROM"],
     "reg": "Seated version",
     "prog": "Add ankle weight"
   },
@@ -398,17 +264,11 @@
     "pat": "Rehab",
     "travel": true,
     "cue": "Full ROM — heel drops below surface. Slow lower.",
-    "muscles": [
-      "soleus",
-      "Achilles tendon"
-    ],
+    "muscles": ["soleus", "Achilles tendon"],
     "setup": "One foot on elevated surface. Slight knee bend (~20-30°).",
     "exec": "Full plantar flexion up. Hold. Lower heel below surface level.",
     "breath": "Exhale up.",
-    "mistakes": [
-      "Knee fully straight",
-      "No heel drop below surface"
-    ],
+    "mistakes": ["Knee fully straight", "No heel drop below surface"],
     "reg": "Bilateral calf raise",
     "prog": "Add load"
   },
@@ -417,18 +277,11 @@
     "pat": "Rehab",
     "travel": true,
     "cue": "Elastic Achilles. No heel-to-toe roll. Stiff ankles.",
-    "muscles": [
-      "Achilles",
-      "plantar fascia",
-      "tibialis"
-    ],
+    "muscles": ["Achilles", "plantar fascia", "tibialis"],
     "setup": "Bilateral. Minimal contact time.",
     "exec": "Spring from ankle. Small amplitude.",
     "breath": "Normal.",
-    "mistakes": [
-      "Heels touching",
-      "Too much amplitude"
-    ],
+    "mistakes": ["Heels touching", "Too much amplitude"],
     "reg": "Balance hold",
     "prog": "Single-leg pogos"
   },
@@ -437,18 +290,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Articulate each vertebra. Light weight only. Not a deadlift.",
-    "muscles": [
-      "hamstrings",
-      "spinal erectors",
-      "thoracic"
-    ],
+    "muscles": ["hamstrings", "spinal erectors", "thoracic"],
     "setup": "Standing on step. 5lb DB or lighter.",
     "exec": "Curl spine from head down. 5s lower.",
     "breath": "Exhale on lower.",
-    "mistakes": [
-      "Too heavy",
-      "Too fast"
-    ],
+    "mistakes": ["Too heavy", "Too fast"],
     "reg": "Bodyweight only",
     "prog": "Taller box, slight load increase"
   },
@@ -457,18 +303,11 @@
     "pat": "Mobility",
     "travel": false,
     "cue": "Slowest possible. Full shoulder ROM. Never rush this.",
-    "muscles": [
-      "shoulder capsule",
-      "lats",
-      "pecs"
-    ],
+    "muscles": ["shoulder capsule", "lats", "pecs"],
     "setup": "Rings at standing height.",
     "exec": "Hang, tuck, rotate over.",
     "breath": "Exhale through rotation.",
-    "mistakes": [
-      "Momentum",
-      "Too fast"
-    ],
+    "mistakes": ["Momentum", "Too fast"],
     "reg": "Tuck only",
     "prog": "Straight body"
   },
@@ -477,17 +316,11 @@
     "pat": "Rehab",
     "travel": false,
     "cue": "Full decompression. Active shoulder pack after 10s.",
-    "muscles": [
-      "grip",
-      "lats",
-      "shoulder decompression"
-    ],
+    "muscles": ["grip", "lats", "shoulder decompression"],
     "setup": "Pull-up bar.",
     "exec": "Full hang. Breathe.",
     "breath": "Long exhales.",
-    "mistakes": [
-      "Not fully relaxing"
-    ],
+    "mistakes": ["Not fully relaxing"],
     "reg": "Shorter duration",
     "prog": "Towel hang, single arm"
   },
@@ -496,19 +329,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Full controlled circle. No passive hanging points in the arc.",
-    "muscles": [
-      "shoulder capsule",
-      "rotator cuff",
-      "deltoid"
-    ],
+    "muscles": ["shoulder capsule", "rotator cuff", "deltoid"],
     "setup": "Standing. Arm moves through largest possible controlled circle.",
     "exec": "Flex → external rotation overhead → extension behind → internal rotation → return.",
     "breath": "Slow nasal. One breath per half circle.",
-    "mistakes": [
-      "Moving too fast",
-      "Compensating with torso",
-      "Avoiding restricted ranges"
-    ],
+    "mistakes": ["Moving too fast", "Compensating with torso", "Avoiding restricted ranges"],
     "reg": "Pendulum swing",
     "prog": "Resistance band"
   },
@@ -517,20 +342,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Largest circle possible. Pelvis stays level.",
-    "muscles": [
-      "hip capsule",
-      "hip flexors",
-      "glutes",
-      "deep rotators"
-    ],
+    "muscles": ["hip capsule", "hip flexors", "glutes", "deep rotators"],
     "setup": "Standing on one leg, hand on wall. Raise opposite knee to hip height.",
     "exec": "Move hip through largest circle while pelvis stays level.",
     "breath": "Slow nasal.",
-    "mistakes": [
-      "Tilting pelvis to gain range",
-      "Bending knee to compensate",
-      "Rushing"
-    ],
+    "mistakes": ["Tilting pelvis to gain range", "Bending knee to compensate", "Rushing"],
     "reg": "Passive hip circle",
     "prog": "Ankle weight"
   },
@@ -539,18 +355,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Slow controlled arc. Stop at any sharp or radiating sensation.",
-    "muscles": [
-      "cervical extensors",
-      "sternocleidomastoid",
-      "scalenes"
-    ],
+    "muscles": ["cervical extensors", "sternocleidomastoid", "scalenes"],
     "setup": "Standing or seated. Shoulders relaxed.",
     "exec": "Forward nod → lateral flexion → gentle extension → other lateral → return.",
     "breath": "Nasal. Slow.",
-    "mistakes": [
-      "Moving too fast",
-      "Ignoring sharp sensations"
-    ],
+    "mistakes": ["Moving too fast", "Ignoring sharp sensations"],
     "reg": "Cervical rotation only",
     "prog": "Isometric resistance at endpoints"
   },
@@ -559,17 +368,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Front and back at 90°. Most restricted movement in training adults.",
-    "muscles": [
-      "hip internal rotators",
-      "hip external rotators"
-    ],
+    "muscles": ["hip internal rotators", "hip external rotators"],
     "setup": "Seated, both knees at 90°.",
     "exec": "Hold. Add PAILs.",
     "breath": "Long exhale.",
-    "mistakes": [
-      "Forcing",
-      "Rounding back"
-    ],
+    "mistakes": ["Forcing", "Rounding back"],
     "reg": "Supine figure 4",
     "prog": "Add PAILs + RAILs"
   },
@@ -578,18 +381,11 @@
     "pat": "Push",
     "travel": true,
     "cue": "Full push-up + extra protraction at top. Hold 1s at peak.",
-    "muscles": [
-      "serratus anterior",
-      "anterior deltoid",
-      "pectoralis"
-    ],
+    "muscles": ["serratus anterior", "anterior deltoid", "pectoralis"],
     "setup": "Standard push-up position.",
     "exec": "Complete push-up. At top, push further to protract fully. Hold 1s.",
     "breath": "Exhale on push and protraction.",
-    "mistakes": [
-      "Skipping protraction at top",
-      "Rib flare"
-    ],
+    "mistakes": ["Skipping protraction at top", "Rib flare"],
     "reg": "Scapular push-up",
     "prog": "Feet elevated, weight vest"
   },
@@ -598,16 +394,11 @@
     "pat": "Rehab",
     "travel": false,
     "cue": "No elbow bend. Depress + retract only.",
-    "muscles": [
-      "lower traps",
-      "serratus"
-    ],
+    "muscles": ["lower traps", "serratus"],
     "setup": "Dead hang from bar.",
     "exec": "Depress and retract scapulas without bending elbows.",
     "breath": "Exhale on retraction.",
-    "mistakes": [
-      "Elbow bend"
-    ],
+    "mistakes": ["Elbow bend"],
     "reg": "Shrug hang",
     "prog": "Add pause"
   },
@@ -616,17 +407,11 @@
     "pat": "Push",
     "travel": false,
     "cue": "Soft elbow. Full chest stretch. Squeeze at top.",
-    "muscles": [
-      "chest",
-      "anterior delt"
-    ],
+    "muscles": ["chest", "anterior delt"],
     "setup": "Rings at chest height.",
     "exec": "Open wide, pause 2s, squeeze closed.",
     "breath": "Inhale open, exhale close.",
-    "mistakes": [
-      "Arms straight",
-      "No pause"
-    ],
+    "mistakes": ["Arms straight", "No pause"],
     "reg": "Cable fly or band fly",
     "prog": "More forward lean"
   },
@@ -635,17 +420,11 @@
     "pat": "Squat",
     "travel": false,
     "cue": "One foot slides lateral. Deep adductor.",
-    "muscles": [
-      "adductors",
-      "inner quads"
-    ],
+    "muscles": ["adductors", "inner quads"],
     "setup": "Standing. One foot on slider.",
     "exec": "Slide laterally into lunge. Return.",
     "breath": "Exhale on return.",
-    "mistakes": [
-      "Too fast",
-      "Balance loss"
-    ],
+    "mistakes": ["Too fast", "Balance loss"],
     "reg": "Side lunge",
     "prog": "Slower tempo"
   },
@@ -654,17 +433,11 @@
     "pat": "Squat",
     "travel": false,
     "cue": "Glute med + adductor combined.",
-    "muscles": [
-      "glutes",
-      "adductors",
-      "quads"
-    ],
+    "muscles": ["glutes", "adductors", "quads"],
     "setup": "Slider under one foot.",
     "exec": "Slide laterally. Full ROM.",
     "breath": "Exhale on return.",
-    "mistakes": [
-      "Foot drifting too far"
-    ],
+    "mistakes": ["Foot drifting too far"],
     "reg": "Bodyweight lateral lunge",
     "prog": "Add KB hold"
   },
@@ -673,17 +446,11 @@
     "pat": "Core",
     "travel": false,
     "cue": "Rotation from hip. Hip drives the movement.",
-    "muscles": [
-      "obliques",
-      "glutes",
-      "lats"
-    ],
+    "muscles": ["obliques", "glutes", "lats"],
     "setup": "High anchor.",
     "exec": "Rotate from hip, chop diagonal.",
     "breath": "Exhale on chop.",
-    "mistakes": [
-      "Arms driving"
-    ],
+    "mistakes": ["Arms driving"],
     "reg": "Bodyweight rotation",
     "prog": "Heavier"
   },
@@ -692,17 +459,11 @@
     "pat": "Rehab",
     "travel": false,
     "cue": "Full decompression. Active shoulder pack after 10s.",
-    "muscles": [
-      "grip",
-      "lats",
-      "shoulder decompression"
-    ],
+    "muscles": ["grip", "lats", "shoulder decompression"],
     "setup": "Pull-up bar.",
     "exec": "Full hang. Breathe.",
     "breath": "Long exhales.",
-    "mistakes": [
-      "Not fully relaxing"
-    ],
+    "mistakes": ["Not fully relaxing"],
     "reg": "Shorter duration",
     "prog": "Towel hang, single arm"
   },
@@ -711,17 +472,11 @@
     "pat": "Core",
     "travel": true,
     "cue": "Opposite arm + leg. Keep hips level.",
-    "muscles": [
-      "core",
-      "serratus",
-      "glutes"
-    ],
+    "muscles": ["core", "serratus", "glutes"],
     "setup": "Bear crawl position.",
     "exec": "Opposite arm + leg move together.",
     "breath": "Exhale per step.",
-    "mistakes": [
-      "Hips swaying"
-    ],
+    "mistakes": ["Hips swaying"],
     "reg": "Dead bug",
     "prog": "Load"
   },
@@ -730,17 +485,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Posterior tilt first. Then breathe into stretch.",
-    "muscles": [
-      "psoas",
-      "iliacus"
-    ],
+    "muscles": ["psoas", "iliacus"],
     "setup": "Back knee on mat. Lunge position.",
     "exec": "Tuck pelvis, hold and breathe.",
     "breath": "Long exhale.",
-    "mistakes": [
-      "No posterior tilt",
-      "Forcing"
-    ],
+    "mistakes": ["No posterior tilt", "Forcing"],
     "reg": "Shorter hold",
     "prog": "Add PAILs"
   },
@@ -749,18 +498,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Breathe into the outer hip. Do not force floor contact.",
-    "muscles": [
-      "piriformis",
-      "glute medius",
-      "hip external rotators"
-    ],
+    "muscles": ["piriformis", "glute medius", "hip external rotators"],
     "setup": "From quadruped, bring shin forward parallel to mat.",
     "exec": "Lower hips toward mat. Hold. Breathe into front hip.",
     "breath": "Long exhale.",
-    "mistakes": [
-      "Torquing the knee",
-      "Holding breath"
-    ],
+    "mistakes": ["Torquing the knee", "Holding breath"],
     "reg": "Supine figure-4",
     "prog": "Full pigeon"
   },
@@ -769,16 +511,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Wide straddle. Rock forward and side to side.",
-    "muscles": [
-      "adductors",
-      "hip external rotators"
-    ],
+    "muscles": ["adductors", "hip external rotators"],
     "setup": "Wide straddle on floor.",
     "exec": "Rock side to side.",
     "breath": "Long exhale.",
-    "mistakes": [
-      "Forcing"
-    ],
+    "mistakes": ["Forcing"],
     "reg": "Smaller straddle",
     "prog": "Weighted forward lean"
   },
@@ -787,15 +524,11 @@
     "pat": "Recovery",
     "travel": true,
     "cue": "Double inhale, then very long exhale. 3-5 cycles only.",
-    "muscles": [
-      "diaphragm"
-    ],
+    "muscles": ["diaphragm"],
     "setup": "Lying down or seated.",
     "exec": "Short sniff then a full inhale on top. Then a long, slow exhale through the mouth.",
     "breath": "The technique is the breathing.",
-    "mistakes": [
-      "More than 5 cycles"
-    ],
+    "mistakes": ["More than 5 cycles"],
     "reg": "Extended exhale only",
     "prog": "None"
   },
@@ -804,18 +537,11 @@
     "pat": "Recovery",
     "travel": false,
     "cue": "Foam roller at mid-back only (T6-T8). 2 minutes minimum.",
-    "muscles": [
-      "thoracic extensors",
-      "rib cage",
-      "lats"
-    ],
+    "muscles": ["thoracic extensors", "rib cage", "lats"],
     "setup": "Foam roller perpendicular to spine at mid-back.",
     "exec": "Allow gravity to produce thoracic extension over the roller. 2 minutes.",
     "breath": "Slow nasal. Full exhale.",
-    "mistakes": [
-      "Roller on lumbar spine",
-      "Less than 2 minutes"
-    ],
+    "mistakes": ["Roller on lumbar spine", "Less than 2 minutes"],
     "reg": "Seated extension over chair back",
     "prog": "Arms overhead"
   },
@@ -824,16 +550,11 @@
     "pat": "Recovery",
     "travel": true,
     "cue": "Breath leads. Movement follows. No bracing. This is not training.",
-    "muscles": [
-      "diaphragm"
-    ],
+    "muscles": ["diaphragm"],
     "setup": "Supine. Arms over chest. Knees at 90°.",
     "exec": "Extend opposite arm and leg ONLY on the exhale. Return on the inhale.",
     "breath": "Exhale = extend. Inhale = return.",
-    "mistakes": [
-      "Bracing",
-      "Moving on the inhale"
-    ],
+    "mistakes": ["Bracing", "Moving on the inhale"],
     "reg": "Crocodile breathing",
     "prog": "None"
   },
@@ -842,17 +563,11 @@
     "pat": "Recovery",
     "travel": true,
     "cue": "Lower back and sides expand. Chest stays still.",
-    "muscles": [
-      "diaphragm",
-      "posterior intercostals"
-    ],
+    "muscles": ["diaphragm", "posterior intercostals"],
     "setup": "Prone (face down). Arms folded under forehead.",
     "exec": "Breathe slowly and fully into the lower back and sides.",
     "breath": "4-6 breaths per minute.",
-    "mistakes": [
-      "Trying to lift the chest",
-      "Breathing too fast"
-    ],
+    "mistakes": ["Trying to lift the chest", "Breathing too fast"],
     "reg": "Seated diaphragmatic breathing",
     "prog": "None"
   },
@@ -861,16 +576,11 @@
     "pat": "Recovery",
     "travel": true,
     "cue": "Inhale 4s → hold 7s → exhale 8s. Audible exhale. 4-5 cycles max.",
-    "muscles": [
-      "diaphragm"
-    ],
+    "muscles": ["diaphragm"],
     "setup": "Supine or seated. Eyes closed.",
     "exec": "Inhale through nose 4s. Hold 7s. Exhale through mouth 8s.",
     "breath": "The technique is the breathing.",
-    "mistakes": [
-      "Shortening the hold",
-      "More than 5 cycles"
-    ],
+    "mistakes": ["Shortening the hold", "More than 5 cycles"],
     "reg": "Extended exhale only",
     "prog": "None"
   },
@@ -879,18 +589,11 @@
     "pat": "Skill",
     "travel": true,
     "cue": "Combos + footwork + head movement.",
-    "muscles": [
-      "coordination",
-      "cardiovascular",
-      "shoulder"
-    ],
+    "muscles": ["coordination", "cardiovascular", "shoulder"],
     "setup": "Clear space.",
     "exec": "Variety of combos.",
     "breath": "Normal.",
-    "mistakes": [
-      "Stiff arms",
-      "No footwork"
-    ],
+    "mistakes": ["Stiff arms", "No footwork"],
     "reg": "Slower combos",
     "prog": "Add rounds"
   },
@@ -899,18 +602,11 @@
     "pat": "Warmup",
     "travel": true,
     "cue": "Breathe leads the movement. Whole spine.",
-    "muscles": [
-      "lumbar erectors",
-      "multifidus",
-      "abdominals"
-    ],
+    "muscles": ["lumbar erectors", "multifidus", "abdominals"],
     "setup": "All fours.",
     "exec": "Cow — drop belly, inhale. Cat — round spine, exhale.",
     "breath": "Inhale into cow. Exhale into cat.",
-    "mistakes": [
-      "Moving from neck only",
-      "Rushing"
-    ],
+    "mistakes": ["Moving from neck only", "Rushing"],
     "reg": "Standing spinal flexion",
     "prog": "Add thoracic rotation"
   },
@@ -919,17 +615,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Movement comes from thoracic spine. Lower back stays still.",
-    "muscles": [
-      "thoracic rotators",
-      "obliques"
-    ],
+    "muscles": ["thoracic rotators", "obliques"],
     "setup": "Quadruped. One hand behind head.",
     "exec": "Elbow toward opposite wrist, then open to ceiling.",
     "breath": "Exhale on rotation open.",
-    "mistakes": [
-      "Rotating from lumbar",
-      "Moving too fast"
-    ],
+    "mistakes": ["Rotating from lumbar", "Moving too fast"],
     "reg": "Seated thoracic rotation",
     "prog": "Add reach at end of rotation"
   },
@@ -938,19 +628,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Largest circle possible. Movement from the hip, not the torso.",
-    "muscles": [
-      "hip flexors",
-      "glutes",
-      "adductors",
-      "TFL"
-    ],
+    "muscles": ["hip flexors", "glutes", "adductors", "TFL"],
     "setup": "Standing. Hands on hips.",
     "exec": "Draw large circles.",
     "breath": "Normal.",
-    "mistakes": [
-      "Small range",
-      "Tilting whole torso"
-    ],
+    "mistakes": ["Small range", "Tilting whole torso"],
     "reg": "Supine hip circle",
     "prog": "Hip CARs"
   },
@@ -959,17 +641,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Isolate at the ankle. Do not rotate the knee or hip.",
-    "muscles": [
-      "tibialis anterior",
-      "peroneals",
-      "gastrocnemius"
-    ],
+    "muscles": ["tibialis anterior", "peroneals", "gastrocnemius"],
     "setup": "Seated or standing on one leg.",
     "exec": "Plantar flexion → inversion → dorsiflexion → eversion → return.",
     "breath": "Normal.",
-    "mistakes": [
-      "Rotating whole leg"
-    ],
+    "mistakes": ["Rotating whole leg"],
     "reg": "Ankle roll",
     "prog": "Resistance band"
   },
@@ -978,17 +654,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Full circle. Isolate at ankle.",
-    "muscles": [
-      "peroneals",
-      "tibialis anterior",
-      "plantar fascia"
-    ],
+    "muscles": ["peroneals", "tibialis anterior", "plantar fascia"],
     "setup": "Seated or standing on one leg.",
     "exec": "Roll through full circle in both directions.",
     "breath": "Normal.",
-    "mistakes": [
-      "Substituting foot pronation for true ankle motion"
-    ],
+    "mistakes": ["Substituting foot pronation for true ankle motion"],
     "reg": "Static hold",
     "prog": "Ankle CARs"
   },
@@ -997,18 +667,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Let knee drop. Opposite shoulder stays down.",
-    "muscles": [
-      "lumbar rotators",
-      "thoracolumbar fascia",
-      "glute",
-      "IT band"
-    ],
+    "muscles": ["lumbar rotators", "thoracolumbar fascia", "glute", "IT band"],
     "setup": "Supine. Bring one knee to chest, cross to opposite side.",
     "exec": "Let knee drop toward floor. Hold. Breathe.",
     "breath": "Long exhale. Body settles on each exhale.",
-    "mistakes": [
-      "Forcing knee to floor when opposite shoulder lifts"
-    ],
+    "mistakes": ["Forcing knee to floor when opposite shoulder lifts"],
     "reg": "Bent-knee drop",
     "prog": "Add hold time"
   },
@@ -1017,18 +680,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Spine rounds gradually. No bouncing.",
-    "muscles": [
-      "hamstrings",
-      "lumbar erectors",
-      "calf"
-    ],
+    "muscles": ["hamstrings", "lumbar erectors", "calf"],
     "setup": "Seated. Legs extended.",
     "exec": "Reach forward. Let spine round gradually.",
     "breath": "Long exhale.",
-    "mistakes": [
-      "Forcing range",
-      "Bouncing"
-    ],
+    "mistakes": ["Forcing range", "Bouncing"],
     "reg": "Bent-knee version",
     "prog": "Jefferson curl"
   },
@@ -1037,16 +693,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Gentle hug only. Breathe into the lower back.",
-    "muscles": [
-      "lumbar erectors",
-      "glute"
-    ],
+    "muscles": ["lumbar erectors", "glute"],
     "setup": "Supine. One or both knees drawn to chest.",
     "exec": "Hug knee gently toward chest. Hold.",
     "breath": "Long exhale.",
-    "mistakes": [
-      "Pulling aggressively"
-    ],
+    "mistakes": ["Pulling aggressively"],
     "reg": "Seated forward lean",
     "prog": "Ankle circles while holding"
   },
@@ -1055,18 +706,11 @@
     "pat": "Core",
     "travel": false,
     "cue": "Brace throughout. 4s return. Full extension.",
-    "muscles": [
-      "TVA",
-      "obliques",
-      "lats"
-    ],
+    "muscles": ["TVA", "obliques", "lats"],
     "setup": "Kneeling on mat.",
     "exec": "Roll out fully. 4s return.",
     "breath": "Exhale on return.",
-    "mistakes": [
-      "Hips dropping",
-      "No brace"
-    ],
+    "mistakes": ["Hips dropping", "No brace"],
     "reg": "Partial extension",
     "prog": "Standing ab roller"
   },
@@ -1075,18 +719,11 @@
     "pat": "Skill",
     "travel": true,
     "cue": "Active hip flexion under load. Tuck first, progress to legs straight.",
-    "muscles": [
-      "hip flexors",
-      "TVA",
-      "triceps"
-    ],
+    "muscles": ["hip flexors", "TVA", "triceps"],
     "setup": "Paralettes or rings.",
     "exec": "Push down, raise legs. Hold 10s.",
     "breath": "Normal. Breathe around the brace.",
-    "mistakes": [
-      "Hips too low",
-      "Compensating with lumbar"
-    ],
+    "mistakes": ["Hips too low", "Compensating with lumbar"],
     "reg": "Tuck L-sit",
     "prog": "Full L-sit, rings"
   },
@@ -1095,17 +732,11 @@
     "pat": "Warmup",
     "travel": true,
     "cue": "No elbow bend. Push floor away — protract the scapulae fully.",
-    "muscles": [
-      "serratus anterior",
-      "lower trapezius"
-    ],
+    "muscles": ["serratus anterior", "lower trapezius"],
     "setup": "Plank. Arms fully extended.",
     "exec": "Push floor away — round upper back. Then allow retraction.",
     "breath": "Exhale on protraction.",
-    "mistakes": [
-      "Bending elbows",
-      "Not reaching full protraction"
-    ],
+    "mistakes": ["Bending elbows", "Not reaching full protraction"],
     "reg": "Wall scapular protraction",
     "prog": "Incline surface, then rings"
   },
@@ -1114,17 +745,11 @@
     "pat": "Mobility",
     "travel": true,
     "cue": "Slow controlled arc. Stop at any sharp sensation.",
-    "muscles": [
-      "cervical extensors",
-      "sternocleidomastoid"
-    ],
+    "muscles": ["cervical extensors", "sternocleidomastoid"],
     "setup": "Standing. Shoulders relaxed.",
     "exec": "Forward nod → lateral flexion → gentle extension → return.",
     "breath": "Nasal.",
-    "mistakes": [
-      "Moving fast",
-      "Shrugging"
-    ],
+    "mistakes": ["Moving fast", "Shrugging"],
     "reg": "Cervical rotation only",
     "prog": "Isometric resistance at endpoints"
   },
@@ -1133,17 +758,11 @@
     "pat": "Rehab",
     "travel": true,
     "cue": "Full ROM — heel drops below surface. Slow lower.",
-    "muscles": [
-      "soleus",
-      "gastrocnemius"
-    ],
+    "muscles": ["soleus", "gastrocnemius"],
     "setup": "Elevated surface. Slight knee bend.",
     "exec": "Full plantar flexion up, full drop down.",
     "breath": "Exhale up.",
-    "mistakes": [
-      "Knee fully straight",
-      "Rushing"
-    ],
+    "mistakes": ["Knee fully straight", "Rushing"],
     "reg": "Bilateral calf raise",
     "prog": "Add weight, longer pause"
   },
@@ -1152,17 +771,11 @@
     "pat": "Pull",
     "travel": true,
     "cue": "Crush grip. Pure grip endurance.",
-    "muscles": [
-      "forearms",
-      "grip",
-      "lats"
-    ],
+    "muscles": ["forearms", "grip", "lats"],
     "setup": "Towel over bar.",
     "exec": "Dead hang 30s.",
     "breath": "Normal.",
-    "mistakes": [
-      "Partial grip"
-    ],
+    "mistakes": ["Partial grip"],
     "reg": "Regular hang",
     "prog": "Single towel"
   },
@@ -1171,18 +784,11 @@
     "pat": "Hinge",
     "travel": false,
     "cue": "Hip hinge — not a squat. Glutes drive the swing.",
-    "muscles": [
-      "glutes",
-      "hamstrings",
-      "spinal erectors"
-    ],
+    "muscles": ["glutes", "hamstrings", "spinal erectors"],
     "setup": "KB on floor in front. Hike it back between legs.",
     "exec": "Explosive hip extension. KB floats up. No arm pull.",
     "breath": "Exhale on hip extension.",
-    "mistakes": [
-      "Squatting",
-      "Arms pulling"
-    ],
+    "mistakes": ["Squatting", "Arms pulling"],
     "reg": "Deadstop each rep",
     "prog": "Heavier, dead-stop variants"
   },
@@ -1191,17 +797,11 @@
     "pat": "Hinge",
     "travel": true,
     "cue": "Lower as slowly as possible. 5+ seconds. Use hands to return.",
-    "muscles": [
-      "hamstrings",
-      "glutes"
-    ],
+    "muscles": ["hamstrings", "glutes"],
     "setup": "Kneeling. Feet anchored firmly.",
     "exec": "Keep hips extended. Lower from knees.",
     "breath": "Exhale on lowering.",
-    "mistakes": [
-      "Hips breaking",
-      "Dropping fast"
-    ],
+    "mistakes": ["Hips breaking", "Dropping fast"],
     "reg": "Slider curl, towel curl",
     "prog": "Partial concentric, full Nordic"
   },
@@ -1210,17 +810,11 @@
     "pat": "Push",
     "travel": true,
     "cue": "70% load shift to one side. Controlled.",
-    "muscles": [
-      "chest",
-      "triceps",
-      "serratus"
-    ],
+    "muscles": ["chest", "triceps", "serratus"],
     "setup": "Wide push-up position.",
     "exec": "Bend one arm, other stays nearly straight.",
     "breath": "Inhale down, exhale up.",
-    "mistakes": [
-      "Both arms bending equally"
-    ],
+    "mistakes": ["Both arms bending equally"],
     "reg": "Regular push-up",
     "prog": "Elevated"
   },
@@ -1229,17 +823,11 @@
     "pat": "Push",
     "travel": false,
     "cue": "Hands on sliders. Upper chest stretch.",
-    "muscles": [
-      "chest",
-      "anterior delt"
-    ],
+    "muscles": ["chest", "anterior delt"],
     "setup": "Push-up position, hands on sliders.",
     "exec": "Fly wide and back slowly.",
     "breath": "Inhale out, exhale in.",
-    "mistakes": [
-      "Speed",
-      "Hips dropping"
-    ],
+    "mistakes": ["Speed", "Hips dropping"],
     "reg": "Push-up",
     "prog": "Incline version"
   },
@@ -1248,17 +836,11 @@
     "pat": "Squat",
     "travel": false,
     "cue": "Elbows high, braced core. Strength focus.",
-    "muscles": [
-      "quads",
-      "glutes",
-      "core"
-    ],
+    "muscles": ["quads", "glutes", "core"],
     "setup": "KB racked at shoulders.",
     "exec": "Deep squat, drive elbows up.",
     "breath": "Inhale down, exhale up.",
-    "mistakes": [
-      "Elbows dropping"
-    ],
+    "mistakes": ["Elbows dropping"],
     "reg": "Goblet squat",
     "prog": "Double KB"
   },
@@ -1267,18 +849,11 @@
     "pat": "Rehab",
     "travel": true,
     "cue": "Tiny weight. Y overhead, T sides, W bent.",
-    "muscles": [
-      "rear delt",
-      "lower trap",
-      "rhomboids"
-    ],
+    "muscles": ["rear delt", "lower trap", "rhomboids"],
     "setup": "Prone on bench or floor. 2lb DBs.",
     "exec": "3 positions. Slow and controlled.",
     "breath": "Exhale on lift.",
-    "mistakes": [
-      "Too heavy",
-      "Momentum"
-    ],
+    "mistakes": ["Too heavy", "Momentum"],
     "reg": "Bodyweight only",
     "prog": "3lb DBs"
   },
@@ -1287,19 +862,11 @@
     "pat": "Warmup",
     "travel": true,
     "cue": "Back, elbows, wrists on wall. Slide up. Do not lose contact.",
-    "muscles": [
-      "lower trapezius",
-      "serratus anterior",
-      "rotator cuff"
-    ],
+    "muscles": ["lower trapezius", "serratus anterior", "rotator cuff"],
     "setup": "Back against wall. Elbows at 90°. Feet 6 inches out.",
     "exec": "Slide arms up maintaining wall contact. Return slowly.",
     "breath": "Exhale on slide up.",
-    "mistakes": [
-      "Back arching off wall",
-      "Shrugging",
-      "Elbows losing contact"
-    ],
+    "mistakes": ["Back arching off wall", "Shrugging", "Elbows losing contact"],
     "reg": "Floor angel",
     "prog": "Resistance band above elbows"
   },
@@ -1308,19 +875,233 @@
     "pat": "Warmup",
     "travel": true,
     "cue": "Lunge + rotation + reach. Full kinetic chain.",
-    "muscles": [
-      "hip flexors",
-      "thoracic",
-      "hamstrings",
-      "lats"
-    ],
+    "muscles": ["hip flexors", "thoracic", "hamstrings", "lats"],
     "setup": "Lunge position.",
     "exec": "Hand to instep, rotate, reach up.",
     "breath": "Exhale on rotation.",
-    "mistakes": [
-      "Rushing"
-    ],
+    "mistakes": ["Rushing"],
     "reg": "Split into parts",
     "prog": "Add hold"
+  },
+  {
+    "n": "DB Floor Press",
+    "pat": "Push",
+    "travel": false,
+    "cue": "Elbows at 45°. Triceps touch floor at bottom — pause 1s. Full extension at top.",
+    "muscles": ["chest", "triceps", "anterior delt"],
+    "setup": "Lie on floor. DBs at shoulder width, elbows bent 90°, upper arms on floor.",
+    "exec": "Press to full extension. Lower until triceps touch floor. 1s pause. Drive up.",
+    "breath": "Inhale on lower, exhale on press.",
+    "mistakes": ["Elbows flaring wide", "No pause at bottom", "DBs colliding at top"],
+    "reg": "Ring push-up",
+    "prog": "Heavier DBs, pause sets, tempo press"
+  },
+  {
+    "n": "DB Chest Fly",
+    "pat": "Push",
+    "travel": false,
+    "cue": "Soft elbow throughout. Stretch at bottom is the stimulus. Control the return.",
+    "muscles": ["chest", "anterior delt"],
+    "setup": "Lie on floor. DBs above chest, palms facing. Slight elbow bend — never fully straight.",
+    "exec": "Open wide until elbows near floor. Pause 2s at full stretch. Squeeze back to start.",
+    "breath": "Inhale on open, exhale on close.",
+    "mistakes": ["Arms going fully straight", "No pause at bottom", "Using momentum to close"],
+    "reg": "Lighter DBs",
+    "prog": "Incline fly, cable fly"
+  },
+  {
+    "n": "DB Single-Arm Row",
+    "pat": "Pull",
+    "travel": false,
+    "cue": "2s pause at top. Full extension at bottom. Heavier than KB allows — use it.",
+    "muscles": ["lats", "rhomboids", "biceps", "rear delt"],
+    "setup": "Hinge forward, brace hand on knee or bench. DB hangs at arm's length.",
+    "exec": "Row to hip. Pause 2s at top. 3s lower to full extension.",
+    "breath": "Exhale on row, inhale on lower.",
+    "mistakes": ["Torso rotating", "No pause at top", "Partial ROM at bottom"],
+    "reg": "KB Single-Arm Row",
+    "prog": "Heavier DB, chest-supported version"
+  },
+  {
+    "n": "DB Chest-Supported Row",
+    "pat": "Pull",
+    "travel": false,
+    "cue": "Chest on surface eliminates lower back and momentum. Pure mid-back. Full hang at bottom.",
+    "muscles": ["rhomboids", "mid traps", "rear delt", "biceps"],
+    "setup": "Lie chest-down on inclined surface (ottoman, couch arm, or bench at 30–45°). DBs hanging.",
+    "exec": "Row to lower ribs. Squeeze hard at top 2s. 3s lower to full extension.",
+    "breath": "Exhale on row, inhale on lower.",
+    "mistakes": ["Shrugging at top", "No full extension at bottom", "Surface too steep"],
+    "reg": "Ring row",
+    "prog": "Heavier DBs, single-arm"
+  },
+  {
+    "n": "DB Pullover",
+    "pat": "Pull",
+    "travel": false,
+    "cue": "Drive from lats, not arms. Full stretch at bottom — feel ribs open. Hips stay down.",
+    "muscles": ["lats", "serratus anterior", "chest", "tricep long head"],
+    "setup": "Lie on floor or across ottoman. One DB held vertically, both hands cupping base. Arms extended above chest.",
+    "exec": "Arc DB back over head to full lat stretch. Drive back up from lats. Slight elbow bend throughout.",
+    "breath": "Inhale on lower, exhale on drive back.",
+    "mistakes": ["Hips rising off surface", "Bending elbows too much", "No full stretch"],
+    "reg": "Lighter DB, shorter arc",
+    "prog": "Heavier, straight-arm pulldown"
+  },
+  {
+    "n": "DB Incline Curl",
+    "pat": "Pull",
+    "travel": false,
+    "cue": "Shoulder behind hip — maximizes long head stretch. Full extension at bottom every rep.",
+    "muscles": ["bicep long head", "brachialis"],
+    "setup": "Seated reclined at ~60° (incline chair or against wall at angle). Arms hang fully behind torso.",
+    "exec": "Curl with full supination. Pause at top. 3s lower to full extension.",
+    "breath": "Exhale on curl, inhale on lower.",
+    "mistakes": ["Shoulder coming forward off surface", "Partial ROM at bottom", "Swinging"],
+    "reg": "Standing DB curl",
+    "prog": "Heavier, single-arm, slow eccentric"
+  },
+  {
+    "n": "DB Hammer Curl",
+    "pat": "Pull",
+    "travel": false,
+    "cue": "Neutral grip throughout. Targets brachialis — the muscle under the bicep that creates arm thickness.",
+    "muscles": ["brachialis", "brachioradialis", "bicep"],
+    "setup": "Standing. DBs at sides, palms facing in (neutral grip).",
+    "exec": "Curl to shoulder height. 2s lower. Keep wrists neutral — no rotation.",
+    "breath": "Exhale on curl, inhale on lower.",
+    "mistakes": ["Rotating to supination", "Swinging at top", "Elbows drifting forward"],
+    "reg": "Lighter weight",
+    "prog": "Cross-body hammer curl, myo-reps"
+  },
+  {
+    "n": "DB Lateral Raise",
+    "pat": "Push",
+    "travel": false,
+    "cue": "Lead with elbows. Pinky slightly higher than thumb at top. Slight forward lean.",
+    "muscles": ["medial delt", "supraspinatus", "upper traps"],
+    "setup": "Standing. DBs at sides. Slight forward hinge (10–15°).",
+    "exec": "Raise to shoulder height leading with elbows. Pinky slightly higher. 3s lower.",
+    "breath": "Exhale on raise, inhale on lower.",
+    "mistakes": ["Shrugging", "Momentum", "Raising above shoulder height", "Wrists leading"],
+    "reg": "Lighter DBs, partial ROM",
+    "prog": "Heavier, cable lateral raise, myo-reps"
+  },
+  {
+    "n": "DB Rear Delt Fly",
+    "pat": "Pull",
+    "travel": false,
+    "cue": "Hinge forward 45°+. Lead with elbows. Squeeze rear delts at top — not traps.",
+    "muscles": ["rear delt", "rhomboids", "mid traps"],
+    "setup": "Hinge forward 45–90°. DBs hanging, palms facing in.",
+    "exec": "Raise DBs out to sides leading with elbows. Squeeze rear delts 1s at top.",
+    "breath": "Exhale on raise, inhale on lower.",
+    "mistakes": ["Torso rising during lift", "Traps dominating", "Using momentum"],
+    "reg": "Band face pull, lighter DBs",
+    "prog": "Chest-supported for strict isolation, heavier"
+  },
+  {
+    "n": "DB Overhead Tricep Extension",
+    "pat": "Push",
+    "travel": false,
+    "cue": "Elbows point up throughout. Long head stretch is the goal. 3s lower.",
+    "muscles": ["tricep long head", "tricep lateral head"],
+    "setup": "Standing or seated. One DB held vertically, both hands supporting base. Elbows overhead.",
+    "exec": "Lower behind head to full stretch. Drive up to full extension without letting elbows flare.",
+    "breath": "Inhale on lower, exhale on press.",
+    "mistakes": ["Elbows flaring wide", "Partial ROM at bottom", "Wrists bending"],
+    "reg": "Band overhead tricep extension",
+    "prog": "Single-arm DB, heavier"
+  },
+  {
+    "n": "DB Romanian Deadlift",
+    "pat": "Hinge",
+    "travel": false,
+    "cue": "DBs stay close to legs. Feel hamstring load at top before descending. Long spine.",
+    "muscles": ["hamstrings", "glutes", "spinal erectors"],
+    "setup": "Stand tall. DBs at thighs, palms facing body.",
+    "exec": "Hinge from hips. Lower DBs close to legs. Full hamstring stretch at bottom. Drive hips forward to return.",
+    "breath": "Inhale on lower, exhale on stand.",
+    "mistakes": ["Rounding upper back", "DBs drifting away from legs", "Knee bend instead of hip hinge"],
+    "reg": "KB Romanian Deadlift",
+    "prog": "Single-leg DB RDL, heavier"
+  },
+  {
+    "n": "DB Bulgarian Split Squat",
+    "pat": "Squat",
+    "travel": false,
+    "cue": "DBs at sides. 2s pause at bottom. Front foot far enough forward that shin stays vertical.",
+    "muscles": ["quads", "glutes", "hip flexors", "adductors"],
+    "setup": "Rear foot elevated on bench or couch. Front foot 2 steps forward. DBs held at sides.",
+    "exec": "Lower controlled. Pause 2s at bottom. Drive up through front heel.",
+    "breath": "Inhale down, exhale up.",
+    "mistakes": ["Front heel rising", "Torso collapsing forward", "Rear foot too close"],
+    "reg": "KB Bulgarian Split Squat, reverse lunge",
+    "prog": "Heavier DBs, pause reps, slow eccentric"
+  },
+  {
+    "n": "Band Face Pull",
+    "pat": "Rehab",
+    "travel": true,
+    "cue": "Pull to forehead. External rotate at end — thumbs point behind you. Elbows high throughout.",
+    "muscles": ["rear delt", "infraspinatus", "mid traps", "rhomboids"],
+    "setup": "Band anchored at face height. Grab with both hands, palms down.",
+    "exec": "Pull band to forehead. At end range, externally rotate so thumbs point back. Hold 1s.",
+    "breath": "Exhale on pull, inhale on return.",
+    "mistakes": ["Elbows dropping", "No external rotation at end", "Shrugging", "Pulling to neck"],
+    "reg": "Band pull-apart",
+    "prog": "Heavier band, cable face pull"
+  },
+  {
+    "n": "Band Pull-Apart",
+    "pat": "Rehab",
+    "travel": true,
+    "cue": "Arms straight. Pull to full extension across chest. Squeeze 1s. 3s return.",
+    "muscles": ["rear delt", "rhomboids", "mid traps", "rotator cuff"],
+    "setup": "Stand. Band held at shoulder width, arms extended forward at chest height.",
+    "exec": "Pull band apart until arms are wide. Hold 1s. 3s controlled return.",
+    "breath": "Exhale on pull apart, inhale on return.",
+    "mistakes": ["Bending elbows", "Shrugging", "No squeeze at end range"],
+    "reg": "Lighter band",
+    "prog": "Heavier band, band face pull"
+  },
+  {
+    "n": "Weighted Pull-Up",
+    "pat": "Pull",
+    "travel": false,
+    "cue": "Same as strict pull-up. Added load demands perfect form — no kipping.",
+    "muscles": ["lats", "rhomboids", "biceps", "lower traps"],
+    "setup": "KB hung from dip belt or held between feet. Grip shoulder-width. Dead hang.",
+    "exec": "Pull from lats. Chest to bar. 3s lower to full hang.",
+    "breath": "Exhale on pull, inhale on lower.",
+    "mistakes": ["Kipping to compensate for load", "Partial ROM", "Not reaching full dead hang"],
+    "reg": "Bodyweight pull-up",
+    "prog": "More load, ring pull-up weighted"
+  },
+  {
+    "n": "Hanging Knee Raise",
+    "pat": "Core",
+    "travel": false,
+    "cue": "Dead hang start. Drive knees to chest — pelvis tilts back at top. No swing.",
+    "muscles": ["hip flexors", "TVA", "rectus abdominis"],
+    "setup": "Dead hang from pull-up bar. Shoulder-width grip.",
+    "exec": "Drive knees to chest. Pelvis tilts back at top. Hold 1s. Lower 3s under control.",
+    "breath": "Exhale on raise, inhale on lower.",
+    "mistakes": ["Swinging", "Not tilting pelvis at top", "Using momentum"],
+    "reg": "Lying knee raise, dead bug",
+    "prog": "Hanging straight leg raise, toes to bar"
+  },
+  {
+    "n": "Butterfly Stretch",
+    "pat": "Mobility",
+    "travel": true,
+    "cue": "Soles together, knees drop out. Lean forward from hip — not spine. Add PAILs for active range.",
+    "muscles": ["hip adductors", "groin", "hip external rotators"],
+    "setup": "Seated. Soles of feet together, knees dropped out. Heels 12–18 inches from body.",
+    "exec": "Lean forward from hips maintaining tall spine. Hold. Add PAILs: press knees into floor 5s, then relax deeper.",
+    "breath": "Long exhale on lean. Breathe through PAILs.",
+    "mistakes": ["Rounding spine instead of hinging at hip", "Bouncing knees", "Forcing range"],
+    "reg": "Wider foot placement (feet further from body)",
+    "prog": "Closer heels, full pancake"
   }
 ]

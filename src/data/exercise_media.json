@@ -610,5 +610,158 @@
     "match": "exact",
     "label": "Watch demo",
     "notes": "Verify lunge + rotation sequence."
+  },
+  {
+    "name": "DB Floor Press",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Floor press specific — bench press demos overshoot the ROM."
+  },
+  {
+    "name": "DB Chest Fly",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Floor version preferred; incline fly sources will differ."
+  },
+  {
+    "name": "DB Single-Arm Row",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "DB implement; KB Single-Arm Row video close but implement differs."
+  },
+  {
+    "name": "DB Chest-Supported Row",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Incline bench setup not available in most home-gym sources."
+  },
+  {
+    "name": "DB Pullover",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Floor pullover differs from bench version; label variant carefully."
+  },
+  {
+    "name": "DB Incline Curl",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Shoulder-behind-hip position critical; most sources rush the setup."
+  },
+  {
+    "name": "DB Hammer Curl",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Neutral grip throughout — verify source doesn't rotate to supination."
+  },
+  {
+    "name": "DB Lateral Raise",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Pinky-high cue and forward lean are non-obvious; exact source needed."
+  },
+  {
+    "name": "DB Rear Delt Fly",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Hinge angle and elbow-lead cue must be present in source."
+  },
+  {
+    "name": "DB Overhead Tricep Extension",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Two-handed DB version; single-arm sources are close variants."
+  },
+  {
+    "name": "DB Romanian Deadlift",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "DB implement; KB RDL video close but bar path differs slightly."
+  },
+  {
+    "name": "DB Bulgarian Split Squat",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "DBs at sides vs KB racked; setup cue differs from KB version."
+  },
+  {
+    "name": "Band Face Pull",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "External rotation at end range is key — most sources skip it."
+  },
+  {
+    "name": "Band Pull-Apart",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Common exercise; exact source needed with squeeze cue."
+  },
+  {
+    "name": "Weighted Pull-Up",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Dip belt setup and dead hang requirement must be shown."
+  },
+  {
+    "name": "Hanging Knee Raise",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Pelvis tilt at top cue is non-obvious; verify in source."
+  },
+  {
+    "name": "Butterfly Stretch",
+    "status": "missing",
+    "provider": "",
+    "url": "",
+    "match": "missing",
+    "label": "Media pending",
+    "notes": "Hip-hinge lean (not spine round) and PAILs cue needed."
   }
 ]
